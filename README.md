@@ -31,6 +31,17 @@
 
 목표는 사람이 읽는 문서와 AI에 전달하는 맥락을 **모두 하나의 그래프에서 생성하는 것**입니다.
 
+### 출발점
+
+기획 문서는 Slack · Notion · 회의록 · Word · Figma 등 여러 도구에 흩어져 있었습니다. 이 문서들을 하나로 통합하기 위해 개인 PM 핸드북을 정리하는 작업에서 시작해, 팀 단위 기획 문서를 GitHub 기반 Markdown 저장소 한곳으로 모으고 정책 · 규칙 · 설명을 구분해 관리했습니다. 문서를 한곳에서 검토하고 반영하기는 편해졌지만, 어긋난 규칙이나 이전 결정을 찾는 과정은 여전히 수작업에 의존했습니다.
+
+PPIR은 이 문서를 **기계가 계산할 수 있는 구조**로 바꾸려는 첫 번째 실험입니다. 이후 진단 결과를 바탕으로 [LKL](https://github.com/hadan-HwH/living-knowledge-lab-engine)로 이어졌습니다.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg">
+  <img src="assets/timeline-light.svg" alt="PM 핸드북에서 PPIR을 거쳐 LKL로 이어진 연구 과정" width="100%">
+</picture>
+
 ## 주요 기능
 
 | 기능 | 설명 |
@@ -160,17 +171,6 @@ python runtime/explain_decision.py --mode timeline D2IR.TARGET.knowledge_represe
 ```
 
 </details>
-
-## 프로젝트의 출발점
-
-기획 문서는 Slack · Notion · 회의록 · Word · Figma 등 여러 도구에 흩어져 있었습니다. 이 문서들을 하나로 통합하기 위해 개인 PM 핸드북을 정리하는 작업에서 시작해, 팀 단위 기획 문서를 GitHub 기반 Markdown 저장소 한곳으로 모으고 정책 · 규칙 · 설명을 구분해 관리했습니다. 문서를 한곳에서 검토하고 반영하기는 편해졌지만, 어긋난 규칙이나 이전 결정을 찾는 과정은 여전히 수작업에 의존했습니다.
-
-PPIR은 이 문서를 **기계가 계산할 수 있는 구조**로 바꾸려는 첫 번째 실험입니다. 이후 진단 결과를 바탕으로 [LKL](https://github.com/hadan-HwH/living-knowledge-lab-engine)로 이어졌습니다.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg">
-  <img src="assets/timeline-light.svg" alt="PM 핸드북에서 PPIR을 거쳐 LKL로 이어진 연구 과정" width="100%">
-</picture>
 
 ## 현재 상태와 한계
 
