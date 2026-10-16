@@ -20,10 +20,10 @@
 
 ## 배경
 
-팀 기획 문서를 Notion에서 GitHub Markdown으로 옮기고, **정책 → 규칙 → 설명** 3층으로 정리했습니다.
+개인 PM 핸드북에서 시작해 팀 기획 문서를 Notion에서 GitHub Markdown으로 옮기고, **정책 → 규칙 → 설명** 3층으로 정리했습니다.
 읽기는 쉬워졌지만, 어긋난 규칙이나 옛 결정은 여전히 사람이 찾아야 했습니다.
 그래서 이 문서를 **기계가 계산할 수 있는 구조**로 바꾸는 방법을 연구했습니다: [PPIR](https://github.com/hadan-HwH/product-planning-ir) → [LKL](https://github.com/hadan-HwH/living-knowledge-lab-engine).
-이 저장소는 그 **첫 번째 시도**입니다.
+PPIR은 그 **첫 번째 시도**입니다.
 
 ## 목차
 
@@ -85,12 +85,12 @@ gantt
     LKL                         :done, 2026-07-29, 2026-09-01
 ```
 
-| 단계 | 기간 | 한 줄 |
+| 단계 | 기간 | 설명 |
 |---|---|---|
-| ① PM 핸드북 (비공개) | 03.30 ~ 06.03 | Notion → GitHub md로 옮기기 시작 |
-| ② 정책 위키 → 팀 기획 문서 저장소 (비공개) | 06.04 ~ 운영 중 | 정책 → 규칙 → 설명 3층 md · 팀 운영 중 (커밋 476건) |
-| ③ **PPIR** (이 저장소) | 07.03 ~ 07.28 | 문서를 타입 있는 그래프로 → 직접 쓰기엔 너무 무거워 중단 |
-| ④ [LKL](https://github.com/hadan-HwH/living-knowledge-lab-engine) | 07.29 ~ 08.31 | 원문에서 기계가 정본을 추출 |
+| ① PM 핸드북 (비공개) | 03.30 ~ 06.03 | 개인 작업 문서(방법론 · 규칙 · KPI). Notion에서 GitHub Markdown으로 이전을 시작한 단계 |
+| ② 정책 위키 → 팀 기획 문서 저장소 (비공개) | 06.04 ~ 운영 중 | 팀 단위 기획 문서 저장소. 정책 → 규칙 → 설명 3층으로 관리하며, 개발 · 기술 조직이 GitHub 이슈로 요청하고 기획이 PR로 반영 (커밋 476건) |
+| ③ **PPIR** (이 저장소) | 07.03 ~ 07.28 | 기획 문서를 타입 있는 atom 그래프로 전환하는 실험. 사람이 구조를 직접 작성하는 부담이 커서 중단 |
+| ④ [LKL](https://github.com/hadan-HwH/living-knowledge-lab-engine) | 07.29 ~ 08.31 | 원문 문서와 코드에서 기계가 정본 개념 그래프를 추출하는 엔진 |
 
 ---
 
@@ -275,7 +275,7 @@ kind 28종은 `kind-registry.yaml` 한 곳에서 정의하고, 스키마 · 폴�
 
 ```
 product-planning-ir/
-├── ir/d2ir/design-history/      # 데이터: 이 시스템 자신의 설계 결정 86 atom
+├── ir/d2ir/design-history/      # 데이터: PPIR 자신의 설계 결정 86 atom
 ├── schemas/                     # kind별 스키마 (YAML)
 ├── kind-registry.yaml           # kind 28종 단일 정의
 ├── ppir.config.yaml             # 도메인 · kind token 설정
@@ -298,9 +298,9 @@ product-planning-ir/
 
 ## 7. 기타
 
-### 들어 있는 데이터: D2IR (이 시스템 자신의 설계 이력)
+### 들어 있는 데이터: D2IR (PPIR 자신의 설계 이력)
 
-공개본에는 실제 제품 기획 데이터가 없습니다. `ir/d2ir/design-history/`에는 **이 시스템을 설계하며 실제로 오간 결정들을, 이 시스템의 결정 그래프로 기록한 것**(도그푸딩)이 들어 있습니다.
+공개본에는 실제 제품 기획 데이터가 없습니다. `ir/d2ir/design-history/`에는 **PPIR을 설계하며 실제로 오간 결정들을, PPIR의 결정 그래프로 기록한 것**(도그푸딩)이 들어 있습니다.
 86 atom: DecisionTarget 15 · DecisionEvent 34 · SolutionOption 30 · Source 6 · OpenQuestion 1.
 
 | DecisionTarget | 흐름 |
@@ -345,13 +345,13 @@ PPIR을 계속 쓰지 않게 된 이유를 가설 6개로 세워 따져봤습니
 
 진단 결과를 [Living Knowledge Lab — Engine](https://github.com/hadan-HwH/living-knowledge-lab-engine)으로 다시 설계했습니다.
 
-| 여기서의 한계 | LKL의 답 |
+| PPIR의 한계 | LKL의 답 |
 |---|---|
 | 표현 밀도 과잉 | 사람이 구조를 쓰지 않고, 원문 조각을 그대로 모아 개념을 조립 |
 | intake 자동화 미완성 | 원문 → 정본 파이프라인. LLM은 추출 한 단계만, 나머지는 결정론 |
 | 소비 workflow 부재 | how · impact · recent 질의와 정본 뷰어를 소비 경로로 둠 |
 
-- 이 저장소의 결정 reducer는 LKL에서 기준선(O0)으로 이어 썼습니다.
-- 여기서는 규칙이었던 "모르는 건 지어내지 않는다"를 LKL은 왕복 인용 게이트로 기계화했습니다.
+- PPIR의 결정 reducer는 LKL에서 기준선(O0)으로 이어 썼습니다.
+- PPIR에서는 규칙이었던 "모르는 건 지어내지 않는다"를 LKL은 왕복 인용 게이트로 기계화했습니다.
 
 현황 전체는 [docs/06-status.md](docs/06-status.md)에 있습니다.
