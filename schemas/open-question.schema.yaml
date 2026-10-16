@@ -1,0 +1,7 @@
+x-kind: OpenQuestion
+required: [question]
+properties:
+  question: { type: string }
+  blocks: { type: array, items: { type: string } }
+  needed_from: { type: string, enum: [backend, product, design, ops, unknown] }
+  resolution_policy: { type: string }

@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.golden_fixture_gap.add_signal_s5
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.golden_fixture_gap
+summary: "더 나중 시점 신호 소스 S5(07-15) 추가"

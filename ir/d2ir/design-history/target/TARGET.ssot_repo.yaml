@@ -1,0 +1,10 @@
+kind: DecisionTarget
+id: D2IR.TARGET.ssot_repo
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+statement: "PPIR/D2IR SSOT를 어느 레포에 둘 것인가"
+current_resolution_policy: single
+source_refs: [D2IR.SRC.session_2026_07_06]
+title: { ko: "SSOT 레포 선택", en: "ssot_repo" }

@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.product_isolation.003_adopt_validator
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.product_isolation
+event_type: adopt_option
+decision_time: "2026-07-08T13:00:00+09:00"
+authority_level: product
+selects: [D2IR.OPTION.product_isolation.domain_plus_validator]
+source_refs: [D2IR.SRC.session_2026_07_08]
+reason: ["고유 DOMAIN + validate_product_isolation(cross-product ref HARD 금지)로 강제."]

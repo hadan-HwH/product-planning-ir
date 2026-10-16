@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.projection_representation.001_propose_atom
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.projection_representation
+event_type: propose_option
+decision_time: "2026-07-07T10:30:00+09:00"
+authority_level: product
+selects: [D2IR.OPTION.projection_representation.as_atom]
+source_refs: [D2IR.SRC.plan8_reframe]
+reason: ["스펙이 CurrentDecisionProjection을 kind로 모델링."]

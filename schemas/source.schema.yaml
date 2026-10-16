@@ -1,0 +1,7 @@
+x-kind: Source
+required: [source_type, captured_ref]
+properties:
+  source_type: { type: string, enum: [slack, notion, meeting, verbal, openapi, pr, figma, sales, marketing, customer, legacy-doc] }
+  captured_ref: { type: string }
+  captured_text: { type: string }
+  location: { type: object }

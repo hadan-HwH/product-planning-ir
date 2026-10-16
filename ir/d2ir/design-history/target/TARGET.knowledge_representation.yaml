@@ -1,0 +1,15 @@
+kind: DecisionTarget
+id: D2IR.TARGET.knowledge_representation
+track: governance
+status: accepted
+commitment_level: accepted
+scope:
+  product: d2ir
+  feature: design-history
+statement: 기획·설계 지식을 어떤 1차 구조로 표현할 것인가
+current_resolution_policy: single
+title:
+  ko: 지식 표현 방식
+  en: knowledge representation model
+source_refs:
+- D2IR.SRC.spec_v1_8_0

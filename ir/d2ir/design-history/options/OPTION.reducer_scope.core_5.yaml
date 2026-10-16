@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.reducer_scope.core_5
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.reducer_scope
+summary: "핵심 5종(adopt/defer/reopen/replace/confirm), 나머지는 raise"

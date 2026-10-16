@@ -1,0 +1,10 @@
+kind: Source
+id: SHOP.SRC.meeting.2026_07_05
+track: governance
+status: accepted
+commitment_level: observed
+scope: { platform: commerce, app: shop-admin, feature: business-need-x }
+source_type: meeting
+captured_ref: fixtures/business-need-x/2026-07-05-scope-review.md
+title: { ko: "7/5 스코프 리뷰 — a 보류", en: "defer a" }
+captured_text: "개발 공수가 MVP 범위를 초과하여 기능 a를 보류한다."

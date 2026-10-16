@@ -1,0 +1,6 @@
+x-kind: Supersession
+required: [supersedes, superseded_by]
+properties:
+  supersedes: { type: string }
+  superseded_by: { type: string }
+  reason: { type: string }

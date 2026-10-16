@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.product_isolation.002_reject_folder
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.product_isolation
+event_type: reject_option
+decision_time: "2026-07-08T12:30:00+09:00"
+authority_level: product
+affects: [D2IR.OPTION.product_isolation.folder_only]
+source_refs: [D2IR.SRC.session_2026_07_08]
+reason: ["load_atoms가 ir/ 전체를 하나의 전역 그래프로 올림 — 폴더만으론 격리 안 됨."]

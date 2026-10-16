@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.adopt_form.deterministic_code
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.adopt_form
+summary: "결정론적 파이프라인(runtime/adopt.py)"

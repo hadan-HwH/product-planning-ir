@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.reducer_scope.all_16
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.reducer_scope
+summary: "16 event_type 전부 + rule 3(effective_from)·rule 5(authority)"

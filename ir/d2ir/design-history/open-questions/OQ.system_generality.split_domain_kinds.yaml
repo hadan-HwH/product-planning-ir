@@ -1,0 +1,9 @@
+kind: OpenQuestion
+id: D2IR.OQ.system_generality.split_domain_kinds
+track: governance
+status: draft
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+question: "Screen/Field/Component 등 SW-특화 Intent kind와 screen 컴파일러를 core에서 domain pack으로 물리적 분리할지(지금은 논리적으로만 'core 아님')?"
+needed_from: product
+blocks: [D2IR.TARGET.system_generality]

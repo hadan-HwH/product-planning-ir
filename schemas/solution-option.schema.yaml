@@ -1,0 +1,7 @@
+x-kind: SolutionOption
+required: [target_ref, summary]
+properties:
+  target_ref: { type: string }                 # DecisionTarget this option answers
+  summary: { type: string }                     # "make a" / "make a2"
+  # lifecycle (candidate/accepted/superseded/rejected/deferred) rides on
+  # the envelope commitment_level; no option-local status field.

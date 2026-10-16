@@ -1,0 +1,10 @@
+x-kind: Rule
+required: [normative]
+properties:
+  normative: { type: string, enum: [MUST, MUST_NOT, SHOULD, MAY] }
+  applies_to: { type: array, items: { type: string } }
+  subject: { type: object, properties: { ref: { type: string } } }
+  condition: { type: object }
+  assertion: { type: object }
+  violation: { type: object, properties: { type: { type: string }, message_ref: { type: string } } }
+  test_refs: { type: array, items: { type: string } }

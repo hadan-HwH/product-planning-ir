@@ -1,0 +1,17 @@
+kind: DecisionEvent
+id: SHOP.DEVENT.business_need_x.004_replace_a_with_a2
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { platform: commerce, app: shop-admin, feature: business-need-x }
+target_ref: SHOP.TARGET.business_need_x_resolution
+event_type: replace_option
+decision_time: "2026-07-12T16:00:00+09:00"
+recorded_at: "2026-07-12T16:30:00+09:00"
+effective_from: "2026-07-12"
+authority_level: product
+replaces: [SHOP.OPTION.business_need_x.a]
+selects: [SHOP.OPTION.business_need_x.a2]
+supersedes: [SHOP.DEVENT.business_need_x.002_defer_a, SHOP.DEVENT.business_need_x.003_reopen]
+source_refs: [SHOP.SRC.meeting.2026_07_12]
+reason: ["사업 니즈를 충족하려면 기존 a보다 a2가 더 적합하다."]

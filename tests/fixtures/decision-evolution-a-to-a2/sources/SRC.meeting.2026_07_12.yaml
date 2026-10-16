@@ -1,0 +1,10 @@
+kind: Source
+id: SHOP.SRC.meeting.2026_07_12
+track: governance
+status: accepted
+commitment_level: observed
+scope: { platform: commerce, app: shop-admin, feature: business-need-x }
+source_type: meeting
+captured_ref: fixtures/business-need-x/2026-07-12-decision.md
+title: { ko: "7/12 결정 회의 — a2로 대체", en: "replace a with a2" }
+captured_text: "사업 니즈를 충족하려면 기존 a보다 a2가 적합하여 a를 a2로 대체한다."

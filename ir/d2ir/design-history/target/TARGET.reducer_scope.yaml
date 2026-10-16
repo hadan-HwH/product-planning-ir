@@ -1,0 +1,10 @@
+kind: DecisionTarget
+id: D2IR.TARGET.reducer_scope
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+statement: "결정 리듀서가 몇 개의 event_type을 구현할 것인가"
+current_resolution_policy: single
+source_refs: [D2IR.SRC.session_2026_07_07]
+title: { ko: "리듀서 범위", en: "reducer_scope" }

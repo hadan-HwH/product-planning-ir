@@ -1,0 +1,6 @@
+x-kind: Validator
+required: [target, rules]
+properties:
+  target: { type: string }
+  shared_helper: { type: string }
+  rules: { type: array, items: { type: string } }

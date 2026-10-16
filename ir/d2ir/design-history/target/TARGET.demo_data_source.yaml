@@ -1,0 +1,15 @@
+kind: DecisionTarget
+id: D2IR.TARGET.demo_data_source
+track: governance
+status: accepted
+commitment_level: accepted
+scope:
+  product: d2ir
+  feature: design-history
+statement: 결정 그래프를 무엇으로 실증·평가할 것인가 (데모/평가 데이터)
+current_resolution_policy: multiple_allowed
+title:
+  ko: 데모·평가 데이터
+  en: demo / eval data source
+source_refs:
+- D2IR.SRC.session_2026_07_07

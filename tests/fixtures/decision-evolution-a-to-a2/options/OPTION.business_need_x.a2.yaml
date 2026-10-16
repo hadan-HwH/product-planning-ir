@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: SHOP.OPTION.business_need_x.a2
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { platform: commerce, app: shop-admin, feature: business-need-x }
+target_ref: SHOP.TARGET.business_need_x_resolution
+summary: "사업 니즈를 충족하기 위해 a2를 만든다."

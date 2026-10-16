@@ -1,0 +1,8 @@
+x-kind: Message
+required: [message_type, text]
+properties:
+  message_type: { type: string, enum: [error, toast, empty_state, confirm, label, success, failure, tooltip] }
+  tone_ref: { type: string }
+  variables: { type: array, items: { type: string } }
+  text: { type: object, required: [ko, en], properties: { ko: { type: string }, en: { type: string } } }
+  used_by: { type: array, items: { type: string } }

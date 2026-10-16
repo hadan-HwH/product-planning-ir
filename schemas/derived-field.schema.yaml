@@ -1,0 +1,8 @@
+x-kind: DerivedField
+required: [entity, derivation, source_of_truth]
+properties:
+  entity: { type: string }
+  derivation: { type: string }
+  read_only: { type: boolean }
+  source_of_truth: { type: string }
+  display_only: { type: boolean }

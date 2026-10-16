@@ -1,0 +1,10 @@
+kind: SolutionOption
+id: D2IR.OPTION.demo_data_source.self_design_history
+track: governance
+status: proposed
+commitment_level: candidate
+scope:
+  product: d2ir
+  feature: design-history
+target_ref: D2IR.TARGET.demo_data_source
+summary: 이 시스템 설계 3일 결정 흐름 자체(D2IR 제품).

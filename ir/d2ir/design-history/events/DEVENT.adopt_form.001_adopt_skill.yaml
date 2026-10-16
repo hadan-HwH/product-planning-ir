@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.adopt_form.001_adopt_skill
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.adopt_form
+event_type: adopt_option
+decision_time: "2026-07-08T11:30:00+09:00"
+authority_level: product
+selects: [D2IR.OPTION.adopt_form.llm_skill]
+source_refs: [D2IR.SRC.session_2026_07_08]
+reason: ["자연어→결정 추출은 본질적으로 LLM 판단 — 결정론 코드 아님. 스킬 decisions 모드로."]

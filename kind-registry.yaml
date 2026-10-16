@@ -1,0 +1,195 @@
+# PPIR Kind Registry — SINGLE SOURCE OF TRUTH for per-kind metadata.
+#
+# Loaders in ppir/registry.py derive from this file:
+#   - token_map()        {token -> kind}          (was ppir.config.yaml kind_token_map)
+#   - folders()          {kind -> folder}         (was ppir/patch.py _KIND_FOLDER)
+#   - lifecycle_matrix() {kind -> (track, levels)} (was validate_lifecycle _MATRIX)
+#   - typed_ref_rules()  [(kind, path, kinds)]     (was validate_typed_refs _RULES)
+#
+# Adding a kind = one edit here (+ its schemas/<kind>.schema.yaml). See
+# docs/03-kind-catalog.md. A kind with no `schema:` is `reserved` — usable id
+# token but no atoms yet. A kind with no `lifecycle:` is lifecycle-unconstrained.
+kinds:
+
+  # ── Evidence / Governance ──
+  Source:
+    token: SRC
+    folder: sources-atoms
+    schema: source.schema.yaml
+    lifecycle: { track: governance, commitment_levels: [observed] }
+  ClaimSet:
+    token: CLAIMSET
+    folder: claim-sets
+    schema: claimset.schema.yaml
+    lifecycle: { track: governance, commitment_levels: [observed] }
+  LegacyExtractionMap:
+    token: LEGACYMAP
+    folder: legacy-maps
+    schema: legacy-extraction-map.schema.yaml
+    lifecycle: { track: governance, commitment_levels: [observed] }
+  Proposal:
+    token: PROP
+    schema: proposal.schema.yaml   # wrapper; stored under ir/proposals/, not via _path_for
+  Decision:
+    token: DEC
+    folder: decisions
+    schema: decision.schema.yaml
+    deprecated: true   # plan9: superseded by the Decision Evolution Graph (DecisionEvent/Target/Projection). Do not author new ones.
+    lifecycle: { track: governance, commitment_levels: [accepted, superseded] }
+  Supersession:
+    token: SUPERSESSION
+    folder: supersessions
+    schema: supersession.schema.yaml
+    deprecated: true   # plan9: generalized by DecisionRelation. Do not author new ones.
+    lifecycle: { track: governance, commitment_levels: [accepted] }
+    typed_refs:
+      supersedes: [Decision]
+      superseded_by: [Decision]
+
+  # ── Product policy / Intent ──
+  Entity:
+    token: ENTITY
+    folder: entities
+    schema: entity.schema.yaml
+    lifecycle: { track: intent, commitment_levels: [accepted, deprecated] }
+    typed_refs:
+      fields: [Field]
+  Field:
+    token: FIELD
+    folder: fields
+    schema: field.schema.yaml
+    lifecycle: { track: intent, commitment_levels: [accepted, deprecated, superseded] }
+    typed_refs:
+      entity: [Entity]
+      validator_ref: [Validator]
+  DerivedField:
+    token: DERIVED
+    folder: derived-fields
+    schema: derived-field.schema.yaml
+    lifecycle: { track: intent, commitment_levels: [accepted, deprecated, superseded] }
+    typed_refs:
+      entity: [Entity]
+  Validator:
+    token: VALIDATOR
+    folder: validators
+    schema: validator.schema.yaml
+    lifecycle: { track: intent, commitment_levels: [accepted, deprecated] }
+    typed_refs:
+      target: [Field]
+      rules: [Rule]
+  Rule:
+    token: RULE
+    folder: rules
+    schema: rule.schema.yaml
+    lifecycle: { track: intent, commitment_levels: [accepted, deprecated, superseded] }
+    typed_refs:
+      decision_refs: [Decision, DecisionEvent, CurrentDecisionProjection]   # plan9: Intent grounds in the decision graph, not just old Decision
+      violation.message_ref: [Message]
+  Screen:
+    token: SCREEN
+    folder: screens
+    schema: screen.schema.yaml
+    lifecycle: { track: intent, commitment_levels: [accepted, planned, deprecated, superseded] }
+    typed_refs:
+      components: [Component]
+  Component:
+    token: COMPONENT
+    folder: components
+    schema: component.schema.yaml
+    lifecycle: { track: intent, commitment_levels: [accepted, planned, deprecated, superseded] }
+    typed_refs:
+      screen: [Screen]
+      fields: [Field]
+      actions: [Action]
+      messages: [Message]
+  Action:
+    token: ACTION
+    folder: actions
+    schema: action.schema.yaml
+    lifecycle: { track: intent, commitment_levels: [accepted, deprecated, superseded] }
+    typed_refs:
+      screen: [Screen]
+      component: [Component]
+      label_ref: [Message]
+      confirmation.message_ref: [Message]
+  Message:
+    token: MSG
+    folder: messages
+    schema: message.schema.yaml
+    lifecycle: { track: intent, commitment_levels: [accepted, deprecated, superseded] }
+    typed_refs:
+      tone_ref: [Rule]
+  Relation:
+    token: RELATION
+    folder: relations
+    schema: relation.schema.yaml
+    lifecycle: { track: intent, commitment_levels: [accepted, deprecated] }
+    typed_refs:
+      from: [Entity]
+      to: [Entity]
+  OpenQuestion:
+    token: OQ
+    folder: open-questions
+    schema: open-question.schema.yaml   # lifecycle-unconstrained
+  TestCase:
+    token: TEST
+    folder: test-cases
+    schema: test-case.schema.yaml       # lifecycle-unconstrained
+
+  # ── Decision Evolution Graph (plan8) — target-scoped event stream + projection ──
+  DecisionTarget:
+    token: TARGET
+    folder: target
+    schema: decision-target.schema.yaml
+    lifecycle: { track: governance, commitment_levels: [candidate, accepted, deferred, superseded] }
+  SolutionOption:
+    token: OPTION
+    folder: options
+    schema: solution-option.schema.yaml
+    lifecycle: { track: governance, commitment_levels: [candidate, accepted, rejected, superseded, deferred] }
+    typed_refs:
+      target_ref: [DecisionTarget]
+  DecisionEvent:
+    token: DEVENT
+    folder: events
+    schema: decision-event.schema.yaml
+    lifecycle: { track: governance, commitment_levels: [accepted] }
+    typed_refs:
+      target_ref: [DecisionTarget]
+      selects: [SolutionOption]
+      replaces: [SolutionOption]
+      affects: [SolutionOption]
+      supersedes: [DecisionEvent]
+      wraps_decision: [Decision]
+  DecisionRelation:
+    token: DECREL
+    folder: relations
+    schema: decision-relation.schema.yaml
+    lifecycle: { track: governance, commitment_levels: [accepted] }
+    typed_refs:
+      from: [SolutionOption, DecisionEvent]
+      to: [SolutionOption, DecisionEvent]
+      decision_event_ref: [DecisionEvent]
+  CurrentDecisionProjection:
+    token: PROJECTION
+    folder: projections
+    schema: current-decision-projection.schema.yaml
+    lifecycle: { track: governance, commitment_levels: [accepted] }
+    typed_refs:
+      target_ref: [DecisionTarget]
+
+  # ── Reality (plan9 B) — what was actually built. "built != policy". ──
+  ImplementationFact:
+    token: IMPL
+    folder: implementation-facts
+    schema: implementation-fact.schema.yaml
+    lifecycle: { track: reality, commitment_levels: [observed] }
+    typed_refs:
+      target_ref: [DecisionTarget]
+      implements_option: [SolutionOption]
+
+  # ── Reserved (id token allocated; no schema/atoms yet) ──
+  DataBinding: { token: BINDING, folder: data-bindings, reserved: true }
+  Term: { token: TERM, folder: terms, reserved: true }
+  Permission: { token: PERM, folder: permissions, reserved: true }
+  StateMachine: { token: STATE, folder: states, reserved: true }

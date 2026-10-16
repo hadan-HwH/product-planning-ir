@@ -1,0 +1,15 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.domain_id_digits.002_replace_relax
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.domain_id_digits
+event_type: replace_option
+decision_time: "2026-07-08T08:55:00+09:00"
+authority_level: product
+replaces: [D2IR.OPTION.domain_id_digits.letters_only]
+selects: [D2IR.OPTION.domain_id_digits.relax_regex]
+supersedes: [D2IR.DEVENT.domain_id_digits.001_propose_letters]
+source_refs: [D2IR.SRC.session_2026_07_08]
+reason: ["제품명이 D2IR이니 정규식 완화(백워드 호환)로 그대로 쓴다."]

@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.system_generality.001_adopt_software
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.system_generality
+event_type: adopt_option
+decision_time: "2026-07-06T09:30:00+09:00"
+authority_level: product
+selects: [D2IR.OPTION.system_generality.software_specific]
+source_refs: [D2IR.SRC.session_2026_07_06]
+reason: ["초기 plan1~7이 화면정의서·역할뷰 등 SW 제품기획 마이그레이션으로 프레이밍됨."]

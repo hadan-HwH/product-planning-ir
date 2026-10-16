@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.product_isolation.domain_plus_validator
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.product_isolation
+summary: "DOMAIN 네임스페이스 + cross-product ref 금지 validator"

@@ -1,0 +1,15 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.system_generality.002_replace_domain_agnostic
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.system_generality
+event_type: replace_option
+decision_time: "2026-07-08T12:30:00+09:00"
+authority_level: product
+replaces: [D2IR.OPTION.system_generality.software_specific]
+selects: [D2IR.OPTION.system_generality.domain_agnostic]
+supersedes: [D2IR.DEVENT.system_generality.001_adopt_software]
+source_refs: [D2IR.SRC.session_2026_07_08]
+reason: ["이 시스템은 직무/분야 한정이 아니라 범용 적용 가능해야 한다. Screen·역할뷰는 도메인 pack이지 core 아님."]

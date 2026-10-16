@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.domain_id_digits.relax_regex
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.domain_id_digits
+summary: "id 정규식을 [A-Z][A-Z0-9]*로 완화해 D2IR 그대로"

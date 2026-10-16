@@ -1,0 +1,10 @@
+kind: SolutionOption
+id: D2IR.OPTION.pilot_data.keep
+track: governance
+status: proposed
+commitment_level: candidate
+scope:
+  product: d2ir
+  feature: design-history
+target_ref: D2IR.TARGET.pilot_data
+summary: 레거시 화면 파일럿(48 atom)을 실데이터 예시로 유지한다.

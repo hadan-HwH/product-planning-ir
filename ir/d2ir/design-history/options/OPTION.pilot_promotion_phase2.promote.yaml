@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.pilot_promotion_phase2.promote
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.pilot_promotion_phase2
+summary: "파일럿 v1→v2 Supersession을 DecisionTarget/Event로 승격"

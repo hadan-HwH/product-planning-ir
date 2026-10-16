@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.option_authoring.on_option
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.option_authoring
+summary: "옵션 atom의 status/commitment에 직접 박음"

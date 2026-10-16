@@ -1,0 +1,518 @@
+{
+  "D2IR.DEVENT.adopt_form.001_adopt_skill": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.adopt_form.001_adopt_skill.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.decision_kind_fate.001_adopt_wrap": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.decision_kind_fate.001_adopt_wrap.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.decision_kind_fate.002_replace_deprecate": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.decision_kind_fate.002_replace_deprecate.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.demo_data_source.001_adopt_synthetic": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.demo_data_source.001_adopt_synthetic.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.demo_data_source.002_propose_audit": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.demo_data_source.002_propose_audit.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.demo_data_source.003_reject_audit": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.demo_data_source.003_reject_audit.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.demo_data_source.004_adopt_self_history": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.demo_data_source.004_adopt_self_history.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.domain_id_digits.001_propose_letters": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.domain_id_digits.001_propose_letters.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.domain_id_digits.002_replace_relax": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.domain_id_digits.002_replace_relax.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.golden_fixture_gap.001_propose_four": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.golden_fixture_gap.001_propose_four.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.golden_fixture_gap.002_replace_s5": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.golden_fixture_gap.002_replace_s5.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.kind_token_devent.001_propose_devevent": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.kind_token_devent.001_propose_devevent.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.kind_token_devent.002_replace_devent": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.kind_token_devent.002_replace_devent.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.knowledge_representation.001_adopt_markdown": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.knowledge_representation.001_adopt_markdown.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.knowledge_representation.002_replace_with_typed_ir": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.knowledge_representation.002_replace_with_typed_ir.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.knowledge_representation.003_replace_with_decision_graph": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.knowledge_representation.003_replace_with_decision_graph.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.option_authoring.001_adopt_on_option": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.option_authoring.001_adopt_on_option.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.option_authoring.002_reject_on_option": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.option_authoring.002_reject_on_option.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.option_authoring.003_adopt_computed": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.option_authoring.003_adopt_computed.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.pilot_data.001_adopt_keep": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.pilot_data.001_adopt_keep.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.pilot_data.002_cancel": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.pilot_data.002_cancel.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.pilot_promotion_phase2.001_propose": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.pilot_promotion_phase2.001_propose.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.pilot_promotion_phase2.002_cancel": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.pilot_promotion_phase2.002_cancel.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.product_isolation.001_propose_folder": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.product_isolation.001_propose_folder.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.product_isolation.002_reject_folder": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.product_isolation.002_reject_folder.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.product_isolation.003_adopt_validator": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.product_isolation.003_adopt_validator.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.projection_representation.001_propose_atom": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.projection_representation.001_propose_atom.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.projection_representation.002_replace_compile_only": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.projection_representation.002_replace_compile_only.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.reducer_scope.001_adopt_core5": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.reducer_scope.001_adopt_core5.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.reducer_scope.002_replace_with_all16": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.reducer_scope.002_replace_with_all16.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.ssot_repo.001_adopt_legacy_plan": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.ssot_repo.001_adopt_legacy_plan.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.ssot_repo.002_replace_with_ppir": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.ssot_repo.002_replace_with_ppir.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.system_generality.001_adopt_software": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.system_generality.001_adopt_software.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.DEVENT.system_generality.002_replace_domain_agnostic": {
+    "kind": "DecisionEvent",
+    "path": "ir/d2ir/design-history/events/DEVENT.system_generality.002_replace_domain_agnostic.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.OPTION.adopt_form.deterministic_code": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.adopt_form.deterministic_code.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.adopt_form.llm_skill": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.adopt_form.llm_skill.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.decision_kind_fate.deprecate": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.decision_kind_fate.deprecate.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.decision_kind_fate.wrap": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.decision_kind_fate.wrap.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.demo_data_source.audit_realdata": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.demo_data_source.audit_realdata.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.demo_data_source.self_design_history": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.demo_data_source.self_design_history.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.demo_data_source.synthetic_a_a2": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.demo_data_source.synthetic_a_a2.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.domain_id_digits.letters_only": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.domain_id_digits.letters_only.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.domain_id_digits.relax_regex": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.domain_id_digits.relax_regex.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.golden_fixture_gap.add_signal_s5": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.golden_fixture_gap.add_signal_s5.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.golden_fixture_gap.four_sources": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.golden_fixture_gap.four_sources.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.kind_token_devent.devent": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.kind_token_devent.devent.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.kind_token_devent.devevent": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.kind_token_devent.devevent.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.knowledge_representation.decision_graph": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.knowledge_representation.decision_graph.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.knowledge_representation.markdown_clause": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.knowledge_representation.markdown_clause.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.knowledge_representation.typed_ir_ssot": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.knowledge_representation.typed_ir_ssot.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.option_authoring.computed_by_projection": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.option_authoring.computed_by_projection.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.option_authoring.on_option": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.option_authoring.on_option.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.pilot_data.keep": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.pilot_data.keep.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.pilot_promotion_phase2.promote": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.pilot_promotion_phase2.promote.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.product_isolation.domain_plus_validator": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.product_isolation.domain_plus_validator.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.product_isolation.folder_only": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.product_isolation.folder_only.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.projection_representation.as_atom": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.projection_representation.as_atom.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.projection_representation.compile_only": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.projection_representation.compile_only.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.reducer_scope.all_16": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.reducer_scope.all_16.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.reducer_scope.core_5": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.reducer_scope.core_5.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.ssot_repo.legacy_plan_repo": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.ssot_repo.legacy_plan_repo.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.ssot_repo.product_planning_ir": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.ssot_repo.product_planning_ir.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.system_generality.domain_agnostic": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.system_generality.domain_agnostic.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OPTION.system_generality.software_specific": {
+    "kind": "SolutionOption",
+    "path": "ir/d2ir/design-history/options/OPTION.system_generality.software_specific.yaml",
+    "status": "proposed",
+    "track": "governance"
+  },
+  "D2IR.OQ.system_generality.split_domain_kinds": {
+    "kind": "OpenQuestion",
+    "path": "ir/d2ir/design-history/open-questions/OQ.system_generality.split_domain_kinds.yaml",
+    "status": "draft",
+    "track": "governance"
+  },
+  "D2IR.SRC.plan8_reframe": {
+    "kind": "Source",
+    "path": "ir/d2ir/design-history/sources/SRC.plan8_reframe.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.SRC.session_2026_07_06": {
+    "kind": "Source",
+    "path": "ir/d2ir/design-history/sources/SRC.session_2026_07_06.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.SRC.session_2026_07_07": {
+    "kind": "Source",
+    "path": "ir/d2ir/design-history/sources/SRC.session_2026_07_07.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.SRC.session_2026_07_08": {
+    "kind": "Source",
+    "path": "ir/d2ir/design-history/sources/SRC.session_2026_07_08.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.SRC.spec_v1_8_0": {
+    "kind": "Source",
+    "path": "ir/d2ir/design-history/sources/SRC.spec_v1_8_0.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.SRC.spec_v2_1_0": {
+    "kind": "Source",
+    "path": "ir/d2ir/design-history/sources/SRC.spec_v2_1_0.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.TARGET.adopt_form": {
+    "kind": "DecisionTarget",
+    "path": "ir/d2ir/design-history/target/TARGET.adopt_form.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.TARGET.decision_kind_fate": {
+    "kind": "DecisionTarget",
+    "path": "ir/d2ir/design-history/target/TARGET.decision_kind_fate.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.TARGET.demo_data_source": {
+    "kind": "DecisionTarget",
+    "path": "ir/d2ir/design-history/target/TARGET.demo_data_source.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.TARGET.domain_id_digits": {
+    "kind": "DecisionTarget",
+    "path": "ir/d2ir/design-history/target/TARGET.domain_id_digits.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.TARGET.golden_fixture_gap": {
+    "kind": "DecisionTarget",
+    "path": "ir/d2ir/design-history/target/TARGET.golden_fixture_gap.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.TARGET.kind_token_devent": {
+    "kind": "DecisionTarget",
+    "path": "ir/d2ir/design-history/target/TARGET.kind_token_devent.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.TARGET.knowledge_representation": {
+    "kind": "DecisionTarget",
+    "path": "ir/d2ir/design-history/target/TARGET.knowledge_representation.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.TARGET.option_authoring": {
+    "kind": "DecisionTarget",
+    "path": "ir/d2ir/design-history/target/TARGET.option_authoring.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.TARGET.pilot_data": {
+    "kind": "DecisionTarget",
+    "path": "ir/d2ir/design-history/target/TARGET.pilot_data.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.TARGET.pilot_promotion_phase2": {
+    "kind": "DecisionTarget",
+    "path": "ir/d2ir/design-history/target/TARGET.pilot_promotion_phase2.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.TARGET.product_isolation": {
+    "kind": "DecisionTarget",
+    "path": "ir/d2ir/design-history/target/TARGET.product_isolation.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.TARGET.projection_representation": {
+    "kind": "DecisionTarget",
+    "path": "ir/d2ir/design-history/target/TARGET.projection_representation.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.TARGET.reducer_scope": {
+    "kind": "DecisionTarget",
+    "path": "ir/d2ir/design-history/target/TARGET.reducer_scope.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.TARGET.ssot_repo": {
+    "kind": "DecisionTarget",
+    "path": "ir/d2ir/design-history/target/TARGET.ssot_repo.yaml",
+    "status": "accepted",
+    "track": "governance"
+  },
+  "D2IR.TARGET.system_generality": {
+    "kind": "DecisionTarget",
+    "path": "ir/d2ir/design-history/target/TARGET.system_generality.yaml",
+    "status": "accepted",
+    "track": "governance"
+  }
+}

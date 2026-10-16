@@ -1,0 +1,10 @@
+kind: DecisionTarget
+id: D2IR.TARGET.domain_id_digits
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+statement: "제품 DOMAIN id에 숫자(D2IR)를 허용할 것인가"
+current_resolution_policy: single
+source_refs: [D2IR.SRC.session_2026_07_08]
+title: { ko: "DOMAIN 숫자 허용", en: "domain_id_digits" }

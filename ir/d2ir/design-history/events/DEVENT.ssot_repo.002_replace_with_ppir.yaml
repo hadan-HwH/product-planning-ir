@@ -1,0 +1,15 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.ssot_repo.002_replace_with_ppir
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.ssot_repo
+event_type: replace_option
+decision_time: "2026-07-06T15:00:00+09:00"
+authority_level: product
+replaces: [D2IR.OPTION.ssot_repo.legacy_plan_repo]
+selects: [D2IR.OPTION.ssot_repo.product_planning_ir]
+supersedes: [D2IR.DEVENT.ssot_repo.001_adopt_legacy_plan]
+source_refs: [D2IR.SRC.session_2026_07_06]
+reason: ["사용자가 product-planning-ir로 재선택."]

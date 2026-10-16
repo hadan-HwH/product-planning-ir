@@ -1,0 +1,9 @@
+kind: OpenQuestion
+id: SHOP.OQ.business_need_x.a2_scope
+track: governance
+status: draft
+commitment_level: candidate
+scope: { platform: commerce, app: shop-admin, feature: business-need-x }
+question: "a2의 MVP 범위를 어디까지로 볼 것인가?"
+needed_from: product
+blocks: [SHOP.TARGET.business_need_x_resolution]

@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.golden_fixture_gap.four_sources
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.golden_fixture_gap
+summary: "결정 spine S1~S4만"

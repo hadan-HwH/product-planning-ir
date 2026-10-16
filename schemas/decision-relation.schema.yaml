@@ -1,0 +1,10 @@
+x-kind: DecisionRelation
+required: [relation_type, from, to]
+properties:
+  relation_type:
+    type: string
+    # generalization of Supersession (1-hop) into the full relation vocabulary
+    enum: [supersedes, replaces, amends, refines, reopens, rejects, defers, confirms, invalidates]
+  from: { type: array, items: { type: string } }         # SolutionOption / DecisionEvent ids
+  to: { type: array, items: { type: string } }           # SolutionOption / DecisionEvent ids
+  decision_event_ref: { type: string }                    # DecisionEvent that established it

@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: SHOP.DEVENT.business_need_x.003_reopen
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { platform: commerce, app: shop-admin, feature: business-need-x }
+target_ref: SHOP.TARGET.business_need_x_resolution
+event_type: reopen_target
+decision_time: "2026-07-10T09:00:00+09:00"
+recorded_at: "2026-07-10T09:30:00+09:00"
+authority_level: product
+source_refs: [SHOP.SRC.sales.2026_07_10]
+reason: ["사업적 니즈가 커져 다시 검토한다."]

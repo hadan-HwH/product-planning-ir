@@ -1,0 +1,10 @@
+kind: Source
+id: D2IR.SRC.spec_v1_8_0
+track: governance
+status: accepted
+commitment_level: observed
+scope: { product: d2ir, feature: design-history }
+source_type: legacy-doc
+captured_ref: design-notes/specs/2026-07-03-ssot-wiki-build.md
+title: { ko: "설계 스펙 v1.8.0 — 마크다운 조항 위키", en: "spec v1.8.0 markdown-clause wiki" }
+captured_text: "기획 문서를 조항(clause) 단위로 쪼개 위키로 구조화한다."

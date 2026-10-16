@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.option_authoring.computed_by_projection
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.option_authoring
+summary: "옵션은 candidate로 두고 결과는 projection이 계산"

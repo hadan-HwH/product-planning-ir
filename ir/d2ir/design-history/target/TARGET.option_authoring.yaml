@@ -1,0 +1,10 @@
+kind: DecisionTarget
+id: D2IR.TARGET.option_authoring
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+statement: "SolutionOption의 결과(accepted/rejected)를 어디에 기록할 것인가"
+current_resolution_policy: single
+source_refs: [D2IR.SRC.session_2026_07_08]
+title: { ko: "옵션 결과 authoring", en: "option_authoring" }

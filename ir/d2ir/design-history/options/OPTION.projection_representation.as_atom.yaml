@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.projection_representation.as_atom
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.projection_representation
+summary: "ir/ atom으로 저장(스키마 kind로)"

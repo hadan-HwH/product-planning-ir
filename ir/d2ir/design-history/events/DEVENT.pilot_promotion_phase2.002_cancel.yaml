@@ -1,0 +1,12 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.pilot_promotion_phase2.002_cancel
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.pilot_promotion_phase2
+event_type: cancel_target
+decision_time: "2026-07-07T12:30:00+09:00"
+authority_level: product
+source_refs: [D2IR.SRC.session_2026_07_07]
+reason: ["파일럿 데이터 제거로 Phase 2 승격 자체가 폐기됨."]

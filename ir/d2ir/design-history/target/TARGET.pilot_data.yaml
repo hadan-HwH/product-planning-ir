@@ -1,0 +1,15 @@
+kind: DecisionTarget
+id: D2IR.TARGET.pilot_data
+track: governance
+status: accepted
+commitment_level: accepted
+scope:
+  product: d2ir
+  feature: design-history
+statement: 레거시 화면 파일럿 데이터를 레포에 유지할 것인가
+current_resolution_policy: single
+title:
+  ko: 레거시 화면 파일럿 데이터
+  en: legacy screen pilot data
+source_refs:
+- D2IR.SRC.session_2026_07_06

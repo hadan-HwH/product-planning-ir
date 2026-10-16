@@ -1,0 +1,27 @@
+required: [kind, id, track, status, commitment_level, scope]
+properties:
+  kind: { type: string }
+  id: { type: string, pattern: '^[A-Z][A-Z0-9]*\.[A-Z_]+\.[a-z0-9_.]+$' }
+  track: { type: string, enum: [discovery, intent, reality, governance] }
+  status:
+    type: string
+    enum: [draft, extracted, proposed, pending_review, approved, accepted, rejected, merged, deprecated, superseded]
+  commitment_level:
+    type: string
+    enum: [observed, interpreted, candidate, accepted, planned, implemented, shipped, deferred, rejected, superseded, deprecated]
+  version: { type: string }
+  scope:
+    type: object
+    properties:
+      product: { type: [string, "null"] }
+      platform: { type: [string, "null"] }
+      app: { type: [string, "null"] }
+      feature: { type: [string, "null"] }
+  title:
+    type: object
+    properties: { ko: { type: string }, en: { type: string } }
+  description: { type: string }
+  source_refs: { type: array, items: { type: string } }
+  decision_refs: { type: array, items: { type: string } }
+  depends_on: { type: array, items: { type: string } }
+  tags: { type: array, items: { type: string } }

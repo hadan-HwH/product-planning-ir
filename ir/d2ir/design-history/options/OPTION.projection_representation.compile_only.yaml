@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.projection_representation.compile_only
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.projection_representation
+summary: "compile 산물로만(compiled/), 수기 금지"

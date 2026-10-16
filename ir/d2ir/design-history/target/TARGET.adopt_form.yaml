@@ -1,0 +1,10 @@
+kind: DecisionTarget
+id: D2IR.TARGET.adopt_form
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+statement: "adopt(대화→결정) 추출을 무엇으로 구현할 것인가"
+current_resolution_policy: single
+source_refs: [D2IR.SRC.session_2026_07_08]
+title: { ko: "adopt 구현 형태", en: "adopt_form" }

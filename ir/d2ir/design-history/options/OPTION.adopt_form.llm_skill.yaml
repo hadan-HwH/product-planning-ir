@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.adopt_form.llm_skill
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.adopt_form
+summary: "LLM 스킬(프롬프트+방법)"

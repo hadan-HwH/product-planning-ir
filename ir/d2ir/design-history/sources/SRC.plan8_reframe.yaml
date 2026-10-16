@@ -1,0 +1,10 @@
+kind: Source
+id: D2IR.SRC.plan8_reframe
+track: governance
+status: accepted
+commitment_level: observed
+scope: { product: d2ir, feature: design-history }
+source_type: legacy-doc
+captured_ref: design-notes/plans/2026-07-07-ppir-plan8-decision-evolution-graph.md
+title: { ko: "plan8 — 결정 진화 그래프 재프레이밍", en: "plan8 decision-evolution reframe" }
+captured_text: "핵심은 문서 atomization이 아니라 결정의 시간적 진화와 현재 상태 계산이다."

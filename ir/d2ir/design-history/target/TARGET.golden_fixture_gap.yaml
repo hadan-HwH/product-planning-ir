@@ -1,0 +1,10 @@
+kind: DecisionTarget
+id: D2IR.TARGET.golden_fixture_gap
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+statement: "a→a2 골든 픽스처로 falsifiable gap을 어떻게 만들 것인가"
+current_resolution_policy: single
+source_refs: [D2IR.SRC.session_2026_07_07]
+title: { ko: "골든 픽스처 gap", en: "golden_fixture_gap" }

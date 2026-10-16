@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.system_generality.domain_agnostic
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.system_generality
+summary: "범용 결정 그래프 core + 도메인별 kind/뷰는 pluggable domain pack."

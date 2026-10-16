@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.ssot_repo.product_planning_ir
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.ssot_repo
+summary: "product-planning-ir 레포"

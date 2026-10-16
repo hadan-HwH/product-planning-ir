@@ -1,0 +1,10 @@
+kind: SolutionOption
+id: D2IR.OPTION.knowledge_representation.decision_graph
+track: governance
+status: proposed
+commitment_level: candidate
+scope:
+  product: d2ir
+  feature: design-history
+target_ref: D2IR.TARGET.knowledge_representation
+summary: 결정 진화 그래프 — 현재 유효한 권위 결정을 reduce로 계산.

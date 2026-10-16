@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.ssot_repo.legacy_plan_repo
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.ssot_repo
+summary: "기존 기획 레포(legacy-plan)"

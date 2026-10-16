@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: SHOP.OPTION.business_need_x.a
+track: governance
+status: superseded
+commitment_level: superseded
+scope: { platform: commerce, app: shop-admin, feature: business-need-x }
+target_ref: SHOP.TARGET.business_need_x_resolution
+summary: "기존 a 기능을 만든다."

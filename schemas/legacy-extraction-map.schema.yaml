@@ -1,0 +1,12 @@
+x-kind: LegacyExtractionMap
+required: [source_doc, mappings]
+properties:
+  source_doc: { type: string }
+  mappings:
+    type: array
+    items:
+      type: object
+      required: [legacy_fragment, atom_id]
+      properties:
+        legacy_fragment: { type: string }
+        atom_id: { type: string }

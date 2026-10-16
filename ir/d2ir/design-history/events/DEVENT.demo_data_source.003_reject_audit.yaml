@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.demo_data_source.003_reject_audit
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.demo_data_source
+event_type: reject_option
+decision_time: "2026-07-08T10:00:00+09:00"
+authority_level: product
+affects: [D2IR.OPTION.demo_data_source.audit_realdata]
+source_refs: [D2IR.SRC.session_2026_07_08]
+reason: ["'이건 의미 없는 거 같아' — 접는다."]

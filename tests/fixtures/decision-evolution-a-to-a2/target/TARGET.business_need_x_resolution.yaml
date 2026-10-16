@@ -1,0 +1,9 @@
+kind: DecisionTarget
+id: SHOP.TARGET.business_need_x_resolution
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { platform: commerce, app: shop-admin, feature: business-need-x }
+statement: "사업 니즈 X를 어떤 기능으로 충족할 것인가"
+current_resolution_policy: single
+title: { ko: "사업 니즈 X 해결", en: "business need X resolution" }

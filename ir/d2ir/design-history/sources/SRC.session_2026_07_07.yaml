@@ -1,0 +1,10 @@
+kind: Source
+id: D2IR.SRC.session_2026_07_07
+track: governance
+status: accepted
+commitment_level: observed
+scope: { product: d2ir, feature: design-history }
+source_type: meeting
+captured_ref: conversation/2026-07-07
+title: { ko: "설계 세션 7/7 — 재프레이밍·파일럿 제거·리듀서", en: "design session 07-07" }
+captured_text: "파일럿은 실험용이니 제거. 합성 a→a2로 명제 증명. 리듀서 16종 완성."

@@ -1,0 +1,15 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.knowledge_representation.003_replace_with_decision_graph
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.knowledge_representation
+event_type: replace_option
+decision_time: "2026-07-07T10:00:00+09:00"
+authority_level: product
+replaces: [D2IR.OPTION.knowledge_representation.typed_ir_ssot]
+selects: [D2IR.OPTION.knowledge_representation.decision_graph]
+supersedes: [D2IR.DEVENT.knowledge_representation.002_replace_with_typed_ir]
+source_refs: [D2IR.SRC.plan8_reframe]
+reason: ["핵심은 atom화가 아니라 결정의 시간적 진화와 현재 상태 계산이다."]

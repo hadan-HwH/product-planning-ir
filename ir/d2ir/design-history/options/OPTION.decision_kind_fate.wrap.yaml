@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.decision_kind_fate.wrap
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.decision_kind_fate
+summary: "DecisionEvent.wraps_decision로 감싸 보존"

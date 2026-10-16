@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.demo_data_source.004_adopt_self_history
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.demo_data_source
+event_type: adopt_option
+decision_time: "2026-07-08T11:00:00+09:00"
+authority_level: product
+selects: [D2IR.OPTION.demo_data_source.self_design_history]
+source_refs: [D2IR.SRC.session_2026_07_08]
+reason: ["이 시스템을 만드는 과정 자체가 프로덕트 → D2IR로 기록·실증한다."]

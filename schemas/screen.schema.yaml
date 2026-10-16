@@ -1,0 +1,10 @@
+x-kind: Screen
+required: [route]
+properties:
+  route: { type: string }
+  entry_points: { type: array, items: { type: string } }
+  required_permissions: { type: array, items: { type: string } }
+  sections: { type: array, items: { type: string } }
+  components: { type: array, items: { type: string } }
+  columns: { type: array, items: { type: string } }
+  rules: { type: array, items: { type: string } }

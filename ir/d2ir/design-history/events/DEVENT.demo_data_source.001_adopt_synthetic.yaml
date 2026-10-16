@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.demo_data_source.001_adopt_synthetic
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.demo_data_source
+event_type: adopt_option
+decision_time: "2026-07-07T13:00:00+09:00"
+authority_level: product
+selects: [D2IR.OPTION.demo_data_source.synthetic_a_a2]
+source_refs: [D2IR.SRC.session_2026_07_07]
+reason: ["합성 a→a2 픽스처로 naive_latest=a vs reducer=a2 명제를 증명."]

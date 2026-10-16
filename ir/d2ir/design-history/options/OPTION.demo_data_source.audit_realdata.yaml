@@ -1,0 +1,10 @@
+kind: SolutionOption
+id: D2IR.OPTION.demo_data_source.audit_realdata
+track: governance
+status: proposed
+commitment_level: candidate
+scope:
+  product: d2ir
+  feature: design-history
+target_ref: D2IR.TARGET.demo_data_source
+summary: 실제 정책 문서의 버전 개정 이력을 실데이터로 쓴다.

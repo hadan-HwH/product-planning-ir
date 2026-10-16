@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.demo_data_source.002_propose_audit
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.demo_data_source
+event_type: propose_option
+decision_time: "2026-07-08T09:00:00+09:00"
+authority_level: product
+selects: [D2IR.OPTION.demo_data_source.audit_realdata]
+source_refs: [D2IR.SRC.session_2026_07_08]
+reason: ["실제 정책 문서의 v1.0→v1.1 개정을 테스트 데이터로 제안."]

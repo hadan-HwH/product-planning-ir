@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.kind_token_devent.devent
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.kind_token_devent
+summary: "DEVENT (축약)"

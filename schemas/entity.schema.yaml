@@ -1,0 +1,5 @@
+x-kind: Entity
+required: [fields]
+properties:
+  identifier: { type: string }
+  fields: { type: array, items: { type: string } }

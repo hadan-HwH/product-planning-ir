@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.domain_id_digits.letters_only
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.domain_id_digits
+summary: "문자만(DIR 등)으로 우회"

@@ -1,0 +1,12 @@
+# Single source for shared identifiers. product-planning-ir (PPIR).
+id_regex: '^[A-Z][A-Z0-9]*\.[A-Z_]+\.[a-z0-9_.]+$'   # {DOMAIN}.{KINDTOKEN}.{slug}; DOMAIN may carry digits (e.g. D2IR)
+domains: [PROD, UI, TERM, TONE, MSG, SHOP, D2IR]
+# products are isolated by DOMAIN: a product-domain atom may not reference another
+# product's atoms. these cross-cutting foundation domains are the shared exception.
+shared_domains: [PROD, UI, TERM, TONE, MSG]
+statuses: [draft, extracted, proposed, pending_review, approved, accepted, rejected, merged, deprecated, superseded]
+tracks: [discovery, intent, reality, governance]
+commitment_levels: [observed, interpreted, candidate, accepted, planned, implemented, shipped, deferred, rejected, superseded, deprecated]
+schema_mode: warn
+# kind → token, folder, lifecycle, and typed-refs now live in kind-registry.yaml
+# (single source). ppir/config.py derives KIND_TOKEN_MAP from it.

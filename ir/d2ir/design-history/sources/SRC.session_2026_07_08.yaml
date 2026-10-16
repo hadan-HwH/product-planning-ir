@@ -1,0 +1,10 @@
+kind: Source
+id: D2IR.SRC.session_2026_07_08
+track: governance
+status: accepted
+commitment_level: observed
+scope: { product: d2ir, feature: design-history }
+source_type: meeting
+captured_ref: conversation/2026-07-08
+title: { ko: "설계 세션 7/8 — D2IR 제품화·데모 데이터", en: "design session 07-08" }
+captured_text: "이 시스템을 만드는 과정 자체가 프로덕트다. D2IR 제품으로 ir/에 넣는다. 실제 정책 문서 데이터 테스트는 접는다."

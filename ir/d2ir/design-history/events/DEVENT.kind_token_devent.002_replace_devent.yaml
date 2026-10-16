@@ -1,0 +1,15 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.kind_token_devent.002_replace_devent
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.kind_token_devent
+event_type: replace_option
+decision_time: "2026-07-07T09:50:00+09:00"
+authority_level: product
+replaces: [D2IR.OPTION.kind_token_devent.devevent]
+selects: [D2IR.OPTION.kind_token_devent.devent]
+supersedes: [D2IR.DEVENT.kind_token_devent.001_propose_devevent]
+source_refs: [D2IR.SRC.session_2026_07_07]
+reason: ["DEVEVENT는 중복(DEV+EVENT). DEVENT로 축약 — 사용자 승인."]

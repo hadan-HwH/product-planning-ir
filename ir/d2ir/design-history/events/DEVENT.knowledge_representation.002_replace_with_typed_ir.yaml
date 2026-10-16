@@ -1,0 +1,15 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.knowledge_representation.002_replace_with_typed_ir
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.knowledge_representation
+event_type: replace_option
+decision_time: "2026-07-06T10:00:00+09:00"
+authority_level: product
+replaces: [D2IR.OPTION.knowledge_representation.markdown_clause]
+selects: [D2IR.OPTION.knowledge_representation.typed_ir_ssot]
+supersedes: [D2IR.DEVENT.knowledge_representation.001_adopt_markdown]
+source_refs: [D2IR.SRC.spec_v2_1_0]
+reason: ["문장을 원자화하지 말고 의미를 타입화한다. 마크다운은 파생물로 강등."]

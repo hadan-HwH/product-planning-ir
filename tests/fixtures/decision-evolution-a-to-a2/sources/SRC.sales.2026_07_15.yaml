@@ -1,0 +1,10 @@
+kind: Source
+id: SHOP.SRC.sales.2026_07_15
+track: governance
+status: accepted
+commitment_level: observed
+scope: { platform: commerce, app: shop-admin, feature: business-need-x }
+source_type: sales
+captured_ref: fixtures/business-need-x/2026-07-15-field-request.md
+title: { ko: "7/15 현장 영업 요청 — a 재차", en: "field: a needed again (signal only)" }
+captured_text: "현장에서 기능 a가 꼭 필요하다는 요청이 재차 들어옴."

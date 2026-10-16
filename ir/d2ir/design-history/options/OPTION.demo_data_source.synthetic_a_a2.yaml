@@ -1,0 +1,10 @@
+kind: SolutionOption
+id: D2IR.OPTION.demo_data_source.synthetic_a_a2
+track: governance
+status: proposed
+commitment_level: candidate
+scope:
+  product: d2ir
+  feature: design-history
+target_ref: D2IR.TARGET.demo_data_source
+summary: 합성 a→a2 골든 픽스처.

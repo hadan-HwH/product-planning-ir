@@ -1,0 +1,7 @@
+x-kind: Relation
+required: [from, to, relation_type]
+properties:
+  from: { type: string }
+  to: { type: string }
+  relation_type: { type: string, enum: [one_to_one, one_to_many, many_to_many, derived_from] }
+  note: { type: string }

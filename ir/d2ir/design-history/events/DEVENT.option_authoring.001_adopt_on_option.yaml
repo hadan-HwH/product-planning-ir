@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.option_authoring.001_adopt_on_option
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.option_authoring
+event_type: adopt_option
+decision_time: "2026-07-07T13:30:00+09:00"
+authority_level: product
+selects: [D2IR.OPTION.option_authoring.on_option]
+source_refs: [D2IR.SRC.session_2026_07_07]
+reason: ["a→a2 픽스처를 옵션에 결과 박아 authoring."]

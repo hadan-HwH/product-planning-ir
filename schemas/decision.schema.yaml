@@ -1,0 +1,8 @@
+x-kind: Decision
+required: [decision]
+properties:
+  decision_type: { type: string }
+  context: { type: string }
+  decision: { type: string }
+  rationale: { type: array, items: { type: string } }
+  supersedes: { type: array, items: { type: string } }

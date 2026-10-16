@@ -1,0 +1,8 @@
+x-kind: TestCase
+required: [target_refs, given, when, then]
+properties:
+  target_refs: { type: array, items: { type: string } }
+  given: { type: array, items: { type: string } }
+  when: { type: array, items: { type: string } }
+  then: { type: array, items: { type: string } }
+  validation_type: { type: string, enum: [policy, ui, api, state] }

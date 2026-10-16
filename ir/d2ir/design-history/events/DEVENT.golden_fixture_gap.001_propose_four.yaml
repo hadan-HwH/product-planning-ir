@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.golden_fixture_gap.001_propose_four
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.golden_fixture_gap
+event_type: propose_option
+decision_time: "2026-07-07T13:10:00+09:00"
+authority_level: product
+selects: [D2IR.OPTION.golden_fixture_gap.four_sources]
+source_refs: [D2IR.SRC.session_2026_07_07]
+reason: ["스펙 원안은 4소스 결정 spine."]

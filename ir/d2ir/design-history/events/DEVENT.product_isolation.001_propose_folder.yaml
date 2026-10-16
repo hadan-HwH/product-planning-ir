@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.product_isolation.001_propose_folder
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.product_isolation
+event_type: propose_option
+decision_time: "2026-07-08T12:00:00+09:00"
+authority_level: product
+selects: [D2IR.OPTION.product_isolation.folder_only]
+source_refs: [D2IR.SRC.session_2026_07_08]
+reason: ["ir 폴더를 분리하면 독립인 것 아니냐(사용자 질문)."]

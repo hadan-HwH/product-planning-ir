@@ -1,0 +1,15 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.golden_fixture_gap.002_replace_s5
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.golden_fixture_gap
+event_type: replace_option
+decision_time: "2026-07-07T13:20:00+09:00"
+authority_level: product
+replaces: [D2IR.OPTION.golden_fixture_gap.four_sources]
+selects: [D2IR.OPTION.golden_fixture_gap.add_signal_s5]
+supersedes: [D2IR.DEVENT.golden_fixture_gap.001_propose_four]
+source_refs: [D2IR.SRC.session_2026_07_07]
+reason: ["4소스론 최신=S4=a2라 청크도 정답 — gap 안 생김. 더 나중 신호 S5로 gap 생성."]

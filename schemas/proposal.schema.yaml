@@ -1,0 +1,14 @@
+x-kind: Proposal
+required: [changes]
+properties:
+  claim_refs: { type: array, items: { type: string } }
+  changes:
+    type: array
+    items:
+      type: object
+      required: [operation, atom]
+      properties:
+        operation: { type: string, enum: [create, update, deprecate] }
+        atom: { type: object }
+  review: { type: object }
+  conflicts: { type: array, items: { type: string } }

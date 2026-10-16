@@ -1,0 +1,12 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.pilot_data.002_cancel
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.pilot_data
+event_type: cancel_target
+decision_time: "2026-07-07T12:00:00+09:00"
+authority_level: product
+source_refs: [D2IR.SRC.session_2026_07_07]
+reason: ["파일럿은 실험용 데이터 — 제거하고 결정그래프 픽스처를 살아있는 예시로 둔다."]

@@ -1,0 +1,10 @@
+x-kind: ImplementationFact
+required: [target_ref, implements_option, observed]
+# Reality track (plan9 B): what was ACTUALLY built. Observed, never policy on its own —
+# 'built != policy' is surfaced as drift, and only a human decision (a DecisionEvent)
+# turns a fact into intent.
+properties:
+  target_ref: { type: string }                 # the DecisionTarget this implements
+  implements_option: { type: string }          # which SolutionOption the built thing matches
+  observed: { type: string }                    # what was seen (endpoint, field, behavior)
+  fact_type: { type: string }                   # openapi / code / db / runtime / manual

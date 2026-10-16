@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.pilot_data.001_adopt_keep
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.pilot_data
+event_type: adopt_option
+decision_time: "2026-07-06T11:00:00+09:00"
+authority_level: product
+selects: [D2IR.OPTION.pilot_data.keep]
+source_refs: [D2IR.SRC.session_2026_07_06]
+reason: ["레거시 화면 파일럿으로 adopt→merge→audit→compile end-to-end 파이프라인을 검증."]

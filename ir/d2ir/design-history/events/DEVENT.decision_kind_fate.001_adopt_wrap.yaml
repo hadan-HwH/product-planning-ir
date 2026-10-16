@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.decision_kind_fate.001_adopt_wrap
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.decision_kind_fate
+event_type: adopt_option
+decision_time: "2026-07-07T10:15:00+09:00"
+authority_level: product
+selects: [D2IR.OPTION.decision_kind_fate.wrap]
+source_refs: [D2IR.SRC.plan8_reframe]
+reason: ["plan8: 기존 Decision 안 부수고 wraps_decision로 감싼다."]

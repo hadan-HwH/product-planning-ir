@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.option_authoring.003_adopt_computed
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.option_authoring
+event_type: adopt_option
+decision_time: "2026-07-08T08:45:00+09:00"
+authority_level: product
+selects: [D2IR.OPTION.option_authoring.computed_by_projection]
+source_refs: [D2IR.SRC.session_2026_07_08]
+reason: ["옵션은 candidate, 결과는 projection이 계산(단일 SSOT)."]

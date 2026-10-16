@@ -1,0 +1,10 @@
+kind: DecisionTarget
+id: D2IR.TARGET.decision_kind_fate
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+statement: "기존 Decision kind를 어떻게 처리할 것인가"
+current_resolution_policy: single
+source_refs: [D2IR.SRC.plan8_reframe]
+title: { ko: "옛 Decision kind 처리", en: "decision_kind_fate" }

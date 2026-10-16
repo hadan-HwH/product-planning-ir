@@ -1,0 +1,8 @@
+kind: SolutionOption
+id: D2IR.OPTION.system_generality.software_specific
+track: governance
+status: proposed
+commitment_level: candidate
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.system_generality
+summary: "SW 제품기획 특화 — Screen/Field/Component kind, FE/BE/QA/PM 역할별 뷰."

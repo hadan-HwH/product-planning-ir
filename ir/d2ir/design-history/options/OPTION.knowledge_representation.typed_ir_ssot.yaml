@@ -1,0 +1,10 @@
+kind: SolutionOption
+id: D2IR.OPTION.knowledge_representation.typed_ir_ssot
+track: governance
+status: proposed
+commitment_level: candidate
+scope:
+  product: d2ir
+  feature: design-history
+target_ref: D2IR.TARGET.knowledge_representation
+summary: 타입 IR atom 그래프를 SSOT로, 마크다운은 컴파일 산물.

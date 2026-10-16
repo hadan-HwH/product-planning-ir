@@ -1,0 +1,21 @@
+x-kind: CurrentDecisionProjection
+required: [target_ref, current_state, current_summary]
+# COMPILE PRODUCT — never hand-authored. Emitted by compile_decision_projection
+# into compiled/reports/decision-projections/. Schema exists to validate that shape.
+properties:
+  target_ref: { type: string }
+  current_state:
+    type: string
+    enum: [accepted, open, deferred, conflict, cancelled]
+  current_option: { type: array, items: { type: string } }        # active SolutionOption ids
+  inactive_options:                                                # {option, reason}
+    type: array
+    items:
+      type: object
+      properties:
+        option: { type: string }
+        reason: { type: string }
+  current_summary: { type: string }
+  decision_chain: { type: array, items: { type: string } }        # human-readable evolution
+  generated_from_events: { type: array, items: { type: string } }
+  source_refs: { type: array, items: { type: string } }

@@ -1,0 +1,10 @@
+kind: DecisionTarget
+id: D2IR.TARGET.system_generality
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+statement: "이 시스템의 적용 범위 — 특정 직무/도메인 특화인가, 범용인가"
+current_resolution_policy: single
+source_refs: [D2IR.SRC.session_2026_07_08]
+title: { ko: "시스템 범용성", en: "system generality" }

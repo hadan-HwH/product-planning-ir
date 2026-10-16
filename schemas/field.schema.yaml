@@ -1,0 +1,9 @@
+x-kind: Field
+required: [entity, data_type]
+properties:
+  entity: { type: string }
+  data_type: { type: string, enum: [string, integer, boolean, datetime, enum, object] }
+  required: { type: boolean }
+  nullable: { type: boolean }
+  term_ref: { type: string }
+  validator_ref: { type: string }

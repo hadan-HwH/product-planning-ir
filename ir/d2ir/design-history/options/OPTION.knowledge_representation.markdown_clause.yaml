@@ -1,0 +1,10 @@
+kind: SolutionOption
+id: D2IR.OPTION.knowledge_representation.markdown_clause
+track: governance
+status: proposed
+commitment_level: candidate
+scope:
+  product: d2ir
+  feature: design-history
+target_ref: D2IR.TARGET.knowledge_representation
+summary: 마크다운 조항(clause) 위키 — 문서를 조항으로 쪼갠다.

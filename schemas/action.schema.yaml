@@ -1,0 +1,13 @@
+x-kind: Action
+required: [screen]
+properties:
+  screen: { type: string }
+  component: { type: string }
+  label_ref: { type: string }
+  actor_permission: { type: string }
+  trigger: { type: object }
+  api_ref: { type: string }
+  no_api: { type: boolean }
+  state_transition: { type: object }
+  confirmation: { type: object, properties: { message_ref: { type: string } } }
+  result_feedback: { type: object }

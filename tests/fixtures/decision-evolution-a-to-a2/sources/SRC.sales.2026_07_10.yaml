@@ -1,0 +1,10 @@
+kind: Source
+id: SHOP.SRC.sales.2026_07_10
+track: governance
+status: accepted
+commitment_level: observed
+scope: { platform: commerce, app: shop-admin, feature: business-need-x }
+source_type: sales
+captured_ref: fixtures/business-need-x/2026-07-10-sales-signal.md
+title: { ko: "7/10 영업 신호 — 사업 니즈 급증", en: "reopen: business need grew" }
+captured_text: "사업적 니즈 X가 커져 a에 대한 검토를 다시 열자는 요청."

@@ -1,0 +1,10 @@
+kind: Source
+id: D2IR.SRC.session_2026_07_06
+track: governance
+status: accepted
+commitment_level: observed
+scope: { product: d2ir, feature: design-history }
+source_type: meeting
+captured_ref: conversation/2026-07-06
+title: { ko: "설계 세션 7/6 — 레거시 화면 파일럿 구축", en: "design session 07-06" }
+captured_text: "레거시 화면 파일럿으로 adopt→merge→audit→compile end-to-end를 검증."

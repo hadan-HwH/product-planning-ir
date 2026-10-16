@@ -1,0 +1,15 @@
+kind: DecisionEvent
+id: SHOP.DEVENT.business_need_x.002_defer_a
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { platform: commerce, app: shop-admin, feature: business-need-x }
+target_ref: SHOP.TARGET.business_need_x_resolution
+event_type: defer_option
+decision_time: "2026-07-05T11:00:00+09:00"
+recorded_at: "2026-07-05T11:30:00+09:00"
+authority_level: product
+affects: [SHOP.OPTION.business_need_x.a]
+supersedes: [SHOP.DEVENT.business_need_x.001_adopt_a]
+source_refs: [SHOP.SRC.meeting.2026_07_05]
+reason: ["개발 공수가 MVP 범위를 초과한다."]

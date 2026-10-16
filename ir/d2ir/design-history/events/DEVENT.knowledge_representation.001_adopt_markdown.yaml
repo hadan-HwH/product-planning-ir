@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.knowledge_representation.001_adopt_markdown
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.knowledge_representation
+event_type: adopt_option
+decision_time: "2026-07-03T10:00:00+09:00"
+authority_level: product
+selects: [D2IR.OPTION.knowledge_representation.markdown_clause]
+source_refs: [D2IR.SRC.spec_v1_8_0]
+reason: ["기획 문서를 조항 단위로 구조화하기로 함."]

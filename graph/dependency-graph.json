@@ -1,0 +1,334 @@
+{
+  "D2IR.DEVENT.adopt_form.001_adopt_skill": [
+    "D2IR.OPTION.adopt_form.llm_skill",
+    "D2IR.SRC.session_2026_07_08",
+    "D2IR.TARGET.adopt_form"
+  ],
+  "D2IR.DEVENT.decision_kind_fate.001_adopt_wrap": [
+    "D2IR.OPTION.decision_kind_fate.wrap",
+    "D2IR.SRC.plan8_reframe",
+    "D2IR.TARGET.decision_kind_fate"
+  ],
+  "D2IR.DEVENT.decision_kind_fate.002_replace_deprecate": [
+    "D2IR.DEVENT.decision_kind_fate.001_adopt_wrap",
+    "D2IR.OPTION.decision_kind_fate.deprecate",
+    "D2IR.OPTION.decision_kind_fate.wrap",
+    "D2IR.SRC.session_2026_07_08",
+    "D2IR.TARGET.decision_kind_fate"
+  ],
+  "D2IR.DEVENT.demo_data_source.001_adopt_synthetic": [
+    "D2IR.OPTION.demo_data_source.synthetic_a_a2",
+    "D2IR.SRC.session_2026_07_07",
+    "D2IR.TARGET.demo_data_source"
+  ],
+  "D2IR.DEVENT.demo_data_source.002_propose_audit": [
+    "D2IR.OPTION.demo_data_source.audit_realdata",
+    "D2IR.SRC.session_2026_07_08",
+    "D2IR.TARGET.demo_data_source"
+  ],
+  "D2IR.DEVENT.demo_data_source.003_reject_audit": [
+    "D2IR.OPTION.demo_data_source.audit_realdata",
+    "D2IR.SRC.session_2026_07_08",
+    "D2IR.TARGET.demo_data_source"
+  ],
+  "D2IR.DEVENT.demo_data_source.004_adopt_self_history": [
+    "D2IR.OPTION.demo_data_source.self_design_history",
+    "D2IR.SRC.session_2026_07_08",
+    "D2IR.TARGET.demo_data_source"
+  ],
+  "D2IR.DEVENT.domain_id_digits.001_propose_letters": [
+    "D2IR.OPTION.domain_id_digits.letters_only",
+    "D2IR.SRC.session_2026_07_08",
+    "D2IR.TARGET.domain_id_digits"
+  ],
+  "D2IR.DEVENT.domain_id_digits.002_replace_relax": [
+    "D2IR.DEVENT.domain_id_digits.001_propose_letters",
+    "D2IR.OPTION.domain_id_digits.letters_only",
+    "D2IR.OPTION.domain_id_digits.relax_regex",
+    "D2IR.SRC.session_2026_07_08",
+    "D2IR.TARGET.domain_id_digits"
+  ],
+  "D2IR.DEVENT.golden_fixture_gap.001_propose_four": [
+    "D2IR.OPTION.golden_fixture_gap.four_sources",
+    "D2IR.SRC.session_2026_07_07",
+    "D2IR.TARGET.golden_fixture_gap"
+  ],
+  "D2IR.DEVENT.golden_fixture_gap.002_replace_s5": [
+    "D2IR.DEVENT.golden_fixture_gap.001_propose_four",
+    "D2IR.OPTION.golden_fixture_gap.add_signal_s5",
+    "D2IR.OPTION.golden_fixture_gap.four_sources",
+    "D2IR.SRC.session_2026_07_07",
+    "D2IR.TARGET.golden_fixture_gap"
+  ],
+  "D2IR.DEVENT.kind_token_devent.001_propose_devevent": [
+    "D2IR.OPTION.kind_token_devent.devevent",
+    "D2IR.SRC.plan8_reframe",
+    "D2IR.TARGET.kind_token_devent"
+  ],
+  "D2IR.DEVENT.kind_token_devent.002_replace_devent": [
+    "D2IR.DEVENT.kind_token_devent.001_propose_devevent",
+    "D2IR.OPTION.kind_token_devent.devent",
+    "D2IR.OPTION.kind_token_devent.devevent",
+    "D2IR.SRC.session_2026_07_07",
+    "D2IR.TARGET.kind_token_devent"
+  ],
+  "D2IR.DEVENT.knowledge_representation.001_adopt_markdown": [
+    "D2IR.OPTION.knowledge_representation.markdown_clause",
+    "D2IR.SRC.spec_v1_8_0",
+    "D2IR.TARGET.knowledge_representation"
+  ],
+  "D2IR.DEVENT.knowledge_representation.002_replace_with_typed_ir": [
+    "D2IR.DEVENT.knowledge_representation.001_adopt_markdown",
+    "D2IR.OPTION.knowledge_representation.markdown_clause",
+    "D2IR.OPTION.knowledge_representation.typed_ir_ssot",
+    "D2IR.SRC.spec_v2_1_0",
+    "D2IR.TARGET.knowledge_representation"
+  ],
+  "D2IR.DEVENT.knowledge_representation.003_replace_with_decision_graph": [
+    "D2IR.DEVENT.knowledge_representation.002_replace_with_typed_ir",
+    "D2IR.OPTION.knowledge_representation.decision_graph",
+    "D2IR.OPTION.knowledge_representation.typed_ir_ssot",
+    "D2IR.SRC.plan8_reframe",
+    "D2IR.TARGET.knowledge_representation"
+  ],
+  "D2IR.DEVENT.option_authoring.001_adopt_on_option": [
+    "D2IR.OPTION.option_authoring.on_option",
+    "D2IR.SRC.session_2026_07_07",
+    "D2IR.TARGET.option_authoring"
+  ],
+  "D2IR.DEVENT.option_authoring.002_reject_on_option": [
+    "D2IR.OPTION.option_authoring.on_option",
+    "D2IR.SRC.session_2026_07_08",
+    "D2IR.TARGET.option_authoring"
+  ],
+  "D2IR.DEVENT.option_authoring.003_adopt_computed": [
+    "D2IR.OPTION.option_authoring.computed_by_projection",
+    "D2IR.SRC.session_2026_07_08",
+    "D2IR.TARGET.option_authoring"
+  ],
+  "D2IR.DEVENT.pilot_data.001_adopt_keep": [
+    "D2IR.OPTION.pilot_data.keep",
+    "D2IR.SRC.session_2026_07_06",
+    "D2IR.TARGET.pilot_data"
+  ],
+  "D2IR.DEVENT.pilot_data.002_cancel": [
+    "D2IR.SRC.session_2026_07_07",
+    "D2IR.TARGET.pilot_data"
+  ],
+  "D2IR.DEVENT.pilot_promotion_phase2.001_propose": [
+    "D2IR.OPTION.pilot_promotion_phase2.promote",
+    "D2IR.SRC.plan8_reframe",
+    "D2IR.TARGET.pilot_promotion_phase2"
+  ],
+  "D2IR.DEVENT.pilot_promotion_phase2.002_cancel": [
+    "D2IR.SRC.session_2026_07_07",
+    "D2IR.TARGET.pilot_promotion_phase2"
+  ],
+  "D2IR.DEVENT.product_isolation.001_propose_folder": [
+    "D2IR.OPTION.product_isolation.folder_only",
+    "D2IR.SRC.session_2026_07_08",
+    "D2IR.TARGET.product_isolation"
+  ],
+  "D2IR.DEVENT.product_isolation.002_reject_folder": [
+    "D2IR.OPTION.product_isolation.folder_only",
+    "D2IR.SRC.session_2026_07_08",
+    "D2IR.TARGET.product_isolation"
+  ],
+  "D2IR.DEVENT.product_isolation.003_adopt_validator": [
+    "D2IR.OPTION.product_isolation.domain_plus_validator",
+    "D2IR.SRC.session_2026_07_08",
+    "D2IR.TARGET.product_isolation"
+  ],
+  "D2IR.DEVENT.projection_representation.001_propose_atom": [
+    "D2IR.OPTION.projection_representation.as_atom",
+    "D2IR.SRC.plan8_reframe",
+    "D2IR.TARGET.projection_representation"
+  ],
+  "D2IR.DEVENT.projection_representation.002_replace_compile_only": [
+    "D2IR.DEVENT.projection_representation.001_propose_atom",
+    "D2IR.OPTION.projection_representation.as_atom",
+    "D2IR.OPTION.projection_representation.compile_only",
+    "D2IR.SRC.plan8_reframe",
+    "D2IR.TARGET.projection_representation"
+  ],
+  "D2IR.DEVENT.reducer_scope.001_adopt_core5": [
+    "D2IR.OPTION.reducer_scope.core_5",
+    "D2IR.SRC.session_2026_07_07",
+    "D2IR.TARGET.reducer_scope"
+  ],
+  "D2IR.DEVENT.reducer_scope.002_replace_with_all16": [
+    "D2IR.DEVENT.reducer_scope.001_adopt_core5",
+    "D2IR.OPTION.reducer_scope.all_16",
+    "D2IR.OPTION.reducer_scope.core_5",
+    "D2IR.SRC.session_2026_07_07",
+    "D2IR.TARGET.reducer_scope"
+  ],
+  "D2IR.DEVENT.ssot_repo.001_adopt_legacy_plan": [
+    "D2IR.OPTION.ssot_repo.legacy_plan_repo",
+    "D2IR.SRC.session_2026_07_06",
+    "D2IR.TARGET.ssot_repo"
+  ],
+  "D2IR.DEVENT.ssot_repo.002_replace_with_ppir": [
+    "D2IR.DEVENT.ssot_repo.001_adopt_legacy_plan",
+    "D2IR.OPTION.ssot_repo.legacy_plan_repo",
+    "D2IR.OPTION.ssot_repo.product_planning_ir",
+    "D2IR.SRC.session_2026_07_06",
+    "D2IR.TARGET.ssot_repo"
+  ],
+  "D2IR.DEVENT.system_generality.001_adopt_software": [
+    "D2IR.OPTION.system_generality.software_specific",
+    "D2IR.SRC.session_2026_07_06",
+    "D2IR.TARGET.system_generality"
+  ],
+  "D2IR.DEVENT.system_generality.002_replace_domain_agnostic": [
+    "D2IR.DEVENT.system_generality.001_adopt_software",
+    "D2IR.OPTION.system_generality.domain_agnostic",
+    "D2IR.OPTION.system_generality.software_specific",
+    "D2IR.SRC.session_2026_07_08",
+    "D2IR.TARGET.system_generality"
+  ],
+  "D2IR.OPTION.adopt_form.deterministic_code": [
+    "D2IR.TARGET.adopt_form"
+  ],
+  "D2IR.OPTION.adopt_form.llm_skill": [
+    "D2IR.TARGET.adopt_form"
+  ],
+  "D2IR.OPTION.decision_kind_fate.deprecate": [
+    "D2IR.TARGET.decision_kind_fate"
+  ],
+  "D2IR.OPTION.decision_kind_fate.wrap": [
+    "D2IR.TARGET.decision_kind_fate"
+  ],
+  "D2IR.OPTION.demo_data_source.audit_realdata": [
+    "D2IR.TARGET.demo_data_source"
+  ],
+  "D2IR.OPTION.demo_data_source.self_design_history": [
+    "D2IR.TARGET.demo_data_source"
+  ],
+  "D2IR.OPTION.demo_data_source.synthetic_a_a2": [
+    "D2IR.TARGET.demo_data_source"
+  ],
+  "D2IR.OPTION.domain_id_digits.letters_only": [
+    "D2IR.TARGET.domain_id_digits"
+  ],
+  "D2IR.OPTION.domain_id_digits.relax_regex": [
+    "D2IR.TARGET.domain_id_digits"
+  ],
+  "D2IR.OPTION.golden_fixture_gap.add_signal_s5": [
+    "D2IR.TARGET.golden_fixture_gap"
+  ],
+  "D2IR.OPTION.golden_fixture_gap.four_sources": [
+    "D2IR.TARGET.golden_fixture_gap"
+  ],
+  "D2IR.OPTION.kind_token_devent.devent": [
+    "D2IR.TARGET.kind_token_devent"
+  ],
+  "D2IR.OPTION.kind_token_devent.devevent": [
+    "D2IR.TARGET.kind_token_devent"
+  ],
+  "D2IR.OPTION.knowledge_representation.decision_graph": [
+    "D2IR.TARGET.knowledge_representation"
+  ],
+  "D2IR.OPTION.knowledge_representation.markdown_clause": [
+    "D2IR.TARGET.knowledge_representation"
+  ],
+  "D2IR.OPTION.knowledge_representation.typed_ir_ssot": [
+    "D2IR.TARGET.knowledge_representation"
+  ],
+  "D2IR.OPTION.option_authoring.computed_by_projection": [
+    "D2IR.TARGET.option_authoring"
+  ],
+  "D2IR.OPTION.option_authoring.on_option": [
+    "D2IR.TARGET.option_authoring"
+  ],
+  "D2IR.OPTION.pilot_data.keep": [
+    "D2IR.TARGET.pilot_data"
+  ],
+  "D2IR.OPTION.pilot_promotion_phase2.promote": [
+    "D2IR.TARGET.pilot_promotion_phase2"
+  ],
+  "D2IR.OPTION.product_isolation.domain_plus_validator": [
+    "D2IR.TARGET.product_isolation"
+  ],
+  "D2IR.OPTION.product_isolation.folder_only": [
+    "D2IR.TARGET.product_isolation"
+  ],
+  "D2IR.OPTION.projection_representation.as_atom": [
+    "D2IR.TARGET.projection_representation"
+  ],
+  "D2IR.OPTION.projection_representation.compile_only": [
+    "D2IR.TARGET.projection_representation"
+  ],
+  "D2IR.OPTION.reducer_scope.all_16": [
+    "D2IR.TARGET.reducer_scope"
+  ],
+  "D2IR.OPTION.reducer_scope.core_5": [
+    "D2IR.TARGET.reducer_scope"
+  ],
+  "D2IR.OPTION.ssot_repo.legacy_plan_repo": [
+    "D2IR.TARGET.ssot_repo"
+  ],
+  "D2IR.OPTION.ssot_repo.product_planning_ir": [
+    "D2IR.TARGET.ssot_repo"
+  ],
+  "D2IR.OPTION.system_generality.domain_agnostic": [
+    "D2IR.TARGET.system_generality"
+  ],
+  "D2IR.OPTION.system_generality.software_specific": [
+    "D2IR.TARGET.system_generality"
+  ],
+  "D2IR.OQ.system_generality.split_domain_kinds": [
+    "D2IR.TARGET.system_generality"
+  ],
+  "D2IR.SRC.plan8_reframe": [],
+  "D2IR.SRC.session_2026_07_06": [],
+  "D2IR.SRC.session_2026_07_07": [],
+  "D2IR.SRC.session_2026_07_08": [],
+  "D2IR.SRC.spec_v1_8_0": [],
+  "D2IR.SRC.spec_v2_1_0": [],
+  "D2IR.TARGET.adopt_form": [
+    "D2IR.SRC.session_2026_07_08"
+  ],
+  "D2IR.TARGET.decision_kind_fate": [
+    "D2IR.SRC.plan8_reframe"
+  ],
+  "D2IR.TARGET.demo_data_source": [
+    "D2IR.SRC.session_2026_07_07"
+  ],
+  "D2IR.TARGET.domain_id_digits": [
+    "D2IR.SRC.session_2026_07_08"
+  ],
+  "D2IR.TARGET.golden_fixture_gap": [
+    "D2IR.SRC.session_2026_07_07"
+  ],
+  "D2IR.TARGET.kind_token_devent": [
+    "D2IR.SRC.plan8_reframe"
+  ],
+  "D2IR.TARGET.knowledge_representation": [
+    "D2IR.SRC.spec_v1_8_0"
+  ],
+  "D2IR.TARGET.option_authoring": [
+    "D2IR.SRC.session_2026_07_08"
+  ],
+  "D2IR.TARGET.pilot_data": [
+    "D2IR.SRC.session_2026_07_06"
+  ],
+  "D2IR.TARGET.pilot_promotion_phase2": [
+    "D2IR.SRC.plan8_reframe"
+  ],
+  "D2IR.TARGET.product_isolation": [
+    "D2IR.SRC.session_2026_07_08"
+  ],
+  "D2IR.TARGET.projection_representation": [
+    "D2IR.SRC.plan8_reframe"
+  ],
+  "D2IR.TARGET.reducer_scope": [
+    "D2IR.SRC.session_2026_07_07"
+  ],
+  "D2IR.TARGET.ssot_repo": [
+    "D2IR.SRC.session_2026_07_06"
+  ],
+  "D2IR.TARGET.system_generality": [
+    "D2IR.SRC.session_2026_07_08"
+  ]
+}

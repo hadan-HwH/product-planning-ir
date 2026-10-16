@@ -1,0 +1,10 @@
+kind: DecisionTarget
+id: D2IR.TARGET.pilot_promotion_phase2
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+statement: "파일럿 Supersession을 결정 그래프로 승격(Phase 2)할 것인가"
+current_resolution_policy: single
+source_refs: [D2IR.SRC.plan8_reframe]
+title: { ko: "Phase 2 파일럿 승격", en: "pilot_promotion_phase2" }

@@ -1,0 +1,13 @@
+kind: DecisionEvent
+id: D2IR.DEVENT.option_authoring.002_reject_on_option
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { product: d2ir, feature: design-history }
+target_ref: D2IR.TARGET.option_authoring
+event_type: reject_option
+decision_time: "2026-07-08T08:30:00+09:00"
+authority_level: product
+affects: [D2IR.OPTION.option_authoring.on_option]
+source_refs: [D2IR.SRC.session_2026_07_08]
+reason: ["D2IR ir/에서 audit이 referencing-rejected로 막음 — 결과를 손으로 박으면 깨짐."]

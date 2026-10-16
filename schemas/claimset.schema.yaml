@@ -1,0 +1,13 @@
+x-kind: ClaimSet
+required: [claims]
+properties:
+  claims:
+    type: array
+    items:
+      type: object
+      required: [local_id, type, text]
+      properties:
+        local_id: { type: string }
+        type: { type: string, enum: [decision_candidate, rationale, risk, rule_candidate, exception_candidate, message_candidate, field_candidate, action_candidate, component_candidate, relation_candidate, derived_candidate, validator_candidate, affected_area_candidate] }
+        text: { type: string }
+        confidence: { type: string, enum: [high, medium, low] }

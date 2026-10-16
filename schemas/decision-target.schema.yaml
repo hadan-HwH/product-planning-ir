@@ -1,0 +1,8 @@
+x-kind: DecisionTarget
+required: [statement]
+properties:
+  statement: { type: string }                 # what is being decided (not the answer)
+  current_resolution_policy:
+    type: string
+    enum: [single, multiple_allowed]           # how many active options may coexist
+  status_note: { type: string }

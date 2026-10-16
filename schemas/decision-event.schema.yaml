@@ -1,0 +1,36 @@
+x-kind: DecisionEvent
+required: [target_ref, event_type, decision_time]
+properties:
+  target_ref: { type: string }                 # DecisionTarget this event acts on
+  event_type:
+    type: string
+    # closed enum (spec). all 16 are handled by compile_decision_projection.
+    enum:
+      - propose_option
+      - adopt_option
+      - defer_option
+      - reject_option
+      - reopen_target
+      - replace_option
+      - refine_option
+      - narrow_scope
+      - expand_scope
+      - supersede_decision
+      - amend_decision
+      - cancel_target
+      - split_target
+      - merge_target
+      - confirm_current
+  decision_time: { type: string }               # when the decision was made
+  recorded_at: { type: string }                 # when it was written down (aux only)
+  effective_from: { type: string }              # when it takes effect
+  actor_refs: { type: array, items: { type: string } }
+  authority_level:
+    type: string
+    enum: [proposal, team, product, executive]
+  selects: { type: array, items: { type: string } }       # SolutionOption ids adopted
+  replaces: { type: array, items: { type: string } }      # SolutionOption ids replaced
+  affects: { type: array, items: { type: string } }       # SolutionOption ids touched
+  supersedes: { type: array, items: { type: string } }    # DecisionEvent ids superseded
+  wraps_decision: { type: string }              # optional legacy Decision id (do not break)
+  reason: { type: array, items: { type: string } }

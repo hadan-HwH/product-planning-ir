@@ -1,0 +1,10 @@
+kind: DecisionRelation
+id: SHOP.DECREL.business_need_x.a_to_a2
+track: governance
+status: accepted
+commitment_level: accepted
+scope: { platform: commerce, app: shop-admin, feature: business-need-x }
+relation_type: replaces
+from: [SHOP.OPTION.business_need_x.a]
+to: [SHOP.OPTION.business_need_x.a2]
+decision_event_ref: SHOP.DEVENT.business_need_x.004_replace_a_with_a2
