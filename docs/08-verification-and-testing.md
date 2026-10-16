@@ -45,8 +45,8 @@ PPIR의 최대 강점(원본이 타입 atom 그래프)은 그대로 최대 약�
 | **3** | Compiled View Review | 사람 | 근거 컬럼 포함 화면정의서 | 부분(화면정의서만) |
 | **4** | Question Acceptance Test | 사람 | `AcceptanceQuestionSet` + 생성 답변 | 제안 (신규 kind 필요) |
 | **5** | Cross-view Consistency Test | 의미 | view 간 atom ID 일치 리포트 | 제안 |
-| **6** | Regression / Golden Test | 회귀 | `tests/test_regression.py` | ✅ 구현 ([P1-3](07-improvements.md#p1-3-tests에-az-파일럿-회귀-테스트)) |
-| **7** | Mutation / Negative Test | 회귀 | `tests/test_mutation.py` | ✅ 구현 |
+| **6** | Regression / Golden Test | 회귀 | `tests/test_decision_projection_golden.py` 외 | ✅ 구현 — 결정 그래프 골든 픽스처 ([P1-3](07-improvements.md#p1-3-tests-회귀-안전망-완료--사용자--plan8)) |
+| **7** | Mutation / Negative Test | 회귀 | (없음) | ⏸ 레거시 파일럿 데이터 제거 때 함께 삭제됨 — 결정 그래프 기준으로 다시 작성 필요 |
 
 > 실행: `python pipeline/06_verify.py` (audit + traceability + pytest 한 번에) 또는 `ppir-verify` 스킬.
 
@@ -244,7 +244,7 @@ questions:
 
 ## 9. Level 6 — Regression / Golden Test (회귀 검증)
 
-파일럿이 통과했으면 그 결과를 **golden으로 고정**한다. ([P1-3](07-improvements.md#p1-3-tests에-az-파일럿-회귀-테스트)의 구체화.)
+파일럿이 통과했으면 그 결과를 **golden으로 고정**한다. ([P1-3](07-improvements.md#p1-3-tests-회귀-안전망-완료--사용자--plan8)의 구체화.)
 
 ```
 tests/fixtures/warehouses/
@@ -267,6 +267,8 @@ tests/fixtures/warehouses/
 ## 10. Level 7 — Mutation / Negative Test (회귀 검증)
 
 "잘못된 것이 들어갔을 때 잡는지"를 보는 테스트. PPIR엔 필수다.
+
+> **현재 상태:** 아래 표는 레거시 화면 파일럿 데이터 기준으로 설계했던 케이스다. 파일럿 데이터를 제거하면서 테스트 파일도 함께 삭제돼 지금은 구현돼 있지 않다.
 
 | # | Mutation | 기대 |
 |---|---|---|

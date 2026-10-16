@@ -25,7 +25,7 @@
 | `ppir-adopt` | 회의/Slack/구두 결정 → Source·ClaimSet·Proposal·OpenQuestion |
 | `ppir-review-merge` | 승인된 Proposal만 staging·audit 후 반영. **유일하게 ir/를 씀** |
 | `ppir-audit` | schema·id·ref·typed_ref·lifecycle·atomicity·중복·표류 검증 |
-| `ppir-verify` | docs/08 검증 피라미드 실행 — audit + traceability report + 회귀/뮤테이션 테스트 → Quality Dashboard·merge 게이트 |
+| `ppir-verify` | docs/08 검증 피라미드 실행 — audit + traceability report + 회귀(골든) 테스트 → Quality Dashboard·merge 게이트 |
 | `ppir-publish` | ir/ → 화면정의서·핸드오프·QA·PM 브리핑 컴파일 |
 | `ppir-context` | AI 작업용 Context Pack 생성 (리포 전체 대신 부분 그래프) |
 | `ppir-explain` | 규칙/화면/필드/결정의 근거 체인 설명 |
