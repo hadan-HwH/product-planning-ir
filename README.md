@@ -14,13 +14,16 @@
     <img src="https://github.com/hadan-HwH/product-planning-ir/actions/workflows/verify.yml/badge.svg" alt="Verification workflow">
   </a>
   <img src="https://img.shields.io/badge/Research-Prototype-64748b?style=flat-square" alt="Research prototype">
+  <a href="https://github.com/hadan-HwH/living-knowledge-lab-engine"><img src="https://img.shields.io/badge/%ED%9B%84%EC%86%8D%20%EC%97%B0%EA%B5%AC-LKL-6D28D9?style=flat-square" alt="후속 연구: LKL"></a>
 </p>
 
-<p align="center"><sub>개인 연구 프로젝트 · 2026.07 · 개발 중단 · 후속 연구 <a href="https://github.com/hadan-HwH/living-knowledge-lab-engine">LKL</a></sub></p>
+<p align="center"><sub>개인 연구 프로젝트 · 2026.07 · 개발 중단</sub></p>
 
 ---
 
 ## 프로젝트 소개
+
+> 후속 연구는 [LKL](https://github.com/hadan-HwH/living-knowledge-lab-engine)에서 이어졌습니다.
 
 기획 문서에서는 같은 규칙이 여러 곳에 복제되고, 결정이 바뀌어도 이전 내용이 그대로 남습니다. 어느 내용이 현재 기준인지 판단하기 어렵고, 문서를 잘라 검색하는 AI(RAG)도 이미 뒤집힌 결정을 현재 결정처럼 가져옵니다.
 
