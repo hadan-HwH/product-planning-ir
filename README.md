@@ -94,8 +94,6 @@ Timeline — D2IR.TARGET.knowledge_representation:
 - **검증 게이트:** 스키마 · 참조 · 이력 등 12종 검증기와 회귀 테스트를 통과해야 반영됩니다.
 - **지식 유형 분리:** 탐색 · 의도 · 구현 · 관리 4개 트랙으로 나눠, 구현된 사실과 정책을 구분합니다.
 
-설계 상세는 [아키텍처 문서](docs/01-architecture.md)와 [검증 문서](docs/08-verification-and-testing.md)에서 확인할 수 있습니다.
-
 ## 아키텍처
 
 ### 구성
@@ -122,6 +120,20 @@ product-planning-ir/
 ├── .claude/skills/   # Claude 스킬
 └── tests/            # 테스트
 ```
+
+상세 설계는 [아키텍처 문서](docs/01-architecture.md)를 참고하세요.
+
+## 검증
+
+모든 변경은 아래 검증을 통과해야 반영되며, 같은 검증을 GitHub Actions에서 push마다 실행합니다.
+
+| 단계 | 확인 내용 |
+| --- | --- |
+| **감사** | 스키마 · ID · 참조 · 수명 주기 · 근거 등 12종 검증기 |
+| **근거 추적** | 모든 항목이 출처와 결정에 연결되어 있고, 끊긴 연결이 없는지 |
+| **회귀 테스트** | 기준 데이터에서 결정 계산 결과가 유지되는지 |
+
+검증 체계 상세는 [검증 문서](docs/08-verification-and-testing.md)를 참고하세요.
 
 ## 실행 및 확인
 
