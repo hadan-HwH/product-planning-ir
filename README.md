@@ -17,7 +17,7 @@
   <a href="https://github.com/hadan-HwH/living-knowledge-lab-engine"><img src="https://img.shields.io/badge/%ED%9B%84%EC%86%8D%20%EC%97%B0%EA%B5%AC-LKL-6D28D9?style=flat-square" alt="후속 연구: LKL"></a>
 </p>
 
-<p align="center"><sub>개인 연구 프로젝트 · 2026.07 · 개발 중단</sub></p>
+<p align="center"><sub>개인 연구 프로젝트 · 2026.07</sub></p>
 
 ---
 
@@ -161,8 +161,6 @@ PPIR은 이 문서를 **기계가 계산할 수 있는 구조**로 바꾸려는 
 </picture>
 
 ## 현재 상태와 한계
-
-현재 개발 중단된 상태이며, 후속 연구는 LKL에서 진행했습니다.
 
 | 항목 | 현재 상태 |
 | --- | --- |
