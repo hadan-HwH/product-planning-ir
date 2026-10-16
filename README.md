@@ -44,7 +44,7 @@
 - **영향 파악 불가**: 규칙 하나를 바꿀 때 어떤 화면·테스트·메시지가 깨지는지 추적할 수 없습니다.
 - **AI가 옛 결정을 현재로 착각**: 문서를 청크로 잘라 검색(RAG)하면, 이미 뒤집힌 결정이나 의견에 불과한 신호가 "현재 결정"처럼 섞여 들어옵니다.
 
-PPIR은 지식을 **원자(atom)**로 쪼개고 **타입(kind)**과 **전역 유일 ID**를 붙인 뒤, 참조로 엮어 그래프로 만듭니다.
+PPIR은 지식을 <b>원자(atom)</b>로 쪼개고 <b>타입(kind)</b>과 **전역 유일 ID**를 붙인 뒤, 참조로 엮어 그래프로 만듭니다.
 결정은 시간순 **이벤트 스트림**(adopt / replace / defer / reopen / cancel …)으로 기록하고, "지금 유효한 결정"은 최신 메시지가 아니라 **reducer가 계산**합니다.
 사람은 YAML을 직접 쓰지 않습니다. 소스를 넣고, 제안(Proposal) diff를 승인하고, 생성된 문서를 읽습니다.
 
@@ -191,7 +191,7 @@ envelope · schema · id · ref · typed-ref · lifecycle · evidence · graph-h
 
 ### 5-5. 지식의 성격을 4 track으로 분리
 
-Discovery / Intent / Reality / Governance. **"구현됐다 ≠ 정책이다"**, **"영업 신호 ≠ 요구사항"**을 구조로 분리합니다.
+Discovery / Intent / Reality / Governance. <b>"구현됐다 ≠ 정책이다"</b>, <b>"영업 신호 ≠ 요구사항"</b>을 구조로 분리합니다.
 
 ### 5-6. Claude 스킬 11종
 
