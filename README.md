@@ -81,14 +81,10 @@ Timeline — D2IR.TARGET.knowledge_representation:
 
 ## 기술적 접근
 
-```mermaid
-flowchart LR
-    A["회의록 · 문서 · 의견"] --> B["변경 제안<br/>Proposal"]
-    B --> C{"검증"}
-    C -- 실패 시 되돌림 --> B
-    C -- 통과 --> D[("결정 그래프")]
-    D --> E["문서 · Context Pack · 리포트 생성"]
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/flow-dark.svg">
+  <img src="assets/flow-light.svg" alt="PPIR 처리 흐름: 근거 자료 → 변경 제안 → 검증 → 결정 그래프 → 문서 생성" width="100%">
+</picture>
 
 - **단일 원천:** 그래프만 원본으로 두고, 문서와 리포트는 모두 그래프에서 생성합니다.
 - **결정 계산:** 결정 이벤트를 순서대로 반영해 현재 상태를 계산하며, 효력 시점과 권한 수준을 고려합니다.
