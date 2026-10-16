@@ -12,6 +12,10 @@
   <a href="https://github.com/hadan-HwH/product-planning-ir/actions/workflows/verify.yml"><img src="https://github.com/hadan-HwH/product-planning-ir/actions/workflows/verify.yml/badge.svg" alt="verify"></a>
 </p>
 
+<p align="center">
+  후속작: <a href="https://github.com/hadan-HwH/living-knowledge-lab-engine">Living Knowledge Lab — Engine</a> (이 시스템을 진단한 뒤 다시 설계한 엔진)
+</p>
+
 ---
 
 ## 목차
@@ -293,6 +297,18 @@ product-planning-ir/
 | [06-status](docs/06-status.md) | 구현 상태 · 로드맵 |
 | [07-improvements](docs/07-improvements.md) | 개선 백로그 (P0 / P1 / P2) |
 | [08-verification-and-testing](docs/08-verification-and-testing.md) | 검증 · 테스트 피라미드 (Level 0~7) · merge 게이트 |
+
+### 후속작으로 이어진 것
+
+이 시스템을 쓰면서 드러난 문제를 가설로 세워 진단했고, 그 결과를 [Living Knowledge Lab — Engine](https://github.com/hadan-HwH/living-knowledge-lab-engine)으로 다시 설계했습니다.
+
+| 여기서의 문제 | 후속작의 답 |
+|---|---|
+| 가벼운 조사부터 확정 결정까지 전부 typed atom으로 직접 써야 함 (표현 밀도 과잉) | 사람이 구조를 쓰지 않고, 원문 조각을 그대로 모아 개념을 조립 |
+| 문서 → 구조 이동이 수작업 (adopt 자동화 미완성) | 원문 → 정본 파이프라인. LLM은 추출 한 단계만, 나머지는 결정론 |
+| 그래프로만 할 수 있는 반복 사용이 없음 (소비 workflow 부재) | how · impact · recent 질의와 정본 뷰어를 소비 경로로 둠 |
+
+이 저장소의 결정 reducer는 후속작에서 기준선(O0)으로 이어 쓰고, 그 위에 다음 단계를 쌓았습니다.
 
 ### 한계
 
