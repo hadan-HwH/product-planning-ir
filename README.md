@@ -96,7 +96,39 @@ Timeline — D2IR.TARGET.knowledge_representation:
 
 설계 상세는 [아키텍처 문서](docs/01-architecture.md)와 [검증 문서](docs/08-verification-and-testing.md)에서 확인할 수 있습니다.
 
+## 아키텍처
+
+### 구성
+
+| 층 | 위치 | 역할 |
+| --- | --- | --- |
+| **데이터** | `ir/` · `schemas/` · `kind-registry.yaml` | 지식 atom과 타입 정의 |
+| **처리** | `ppir/` · `validators/` · `runtime/` · `compilers/` | 읽기 · 검증 · 반영 · 문서 생성 |
+| **절차** | `pipeline/` · `.claude/skills/` | 단계별 실행과 Claude 스킬 |
+| **생성물** | `graph/` · `compiled/` | 의존 관계 색인 · Context Pack · 리포트 |
+
+### 저장소 구조
+
+```
+product-planning-ir/
+├── ir/d2ir/          # 데모 데이터: PPIR 자신의 설계 결정
+├── schemas/          # 타입별 스키마
+├── ppir/             # atom 로더 · 레지스트리 · 변경 적용
+├── validators/       # 검증기 12종
+├── runtime/          # 반영 · 감사 · 결정 이력 조회
+├── compilers/        # Context Pack · 결정 상태 · 근거 추적 · 화면정의서 생성
+├── evaluation/       # 문서 검색(RAG) 대비 평가
+├── pipeline/         # 감사 → 그래프 생성 → 문서 생성 → 검증
+├── .claude/skills/   # Claude 스킬
+└── tests/            # 테스트
+```
+
 ## 실행 및 확인
+
+<details>
+<summary><b>실행 방법 보기</b></summary>
+
+<br>
 
 Python 3.9 이상 환경이 필요합니다.
 
@@ -114,6 +146,8 @@ python evaluation/harness.py
 # 결정 하나의 변경 이력 조회
 python runtime/explain_decision.py --mode timeline D2IR.TARGET.knowledge_representation
 ```
+
+</details>
 
 ## 프로젝트의 출발점
 
