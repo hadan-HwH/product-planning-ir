@@ -13,10 +13,19 @@
 </p>
 
 <p align="center">
-  후속작: <a href="https://github.com/hadan-HwH/living-knowledge-lab-engine">Living Knowledge Lab — Engine</a> (이 시스템을 진단한 뒤 다시 설계한 엔진)
+  <b>상태: 연구 프로토타입 · 2026.07 중단</b> → 후속 연구는 <a href="https://github.com/hadan-HwH/living-knowledge-lab-engine">Living Knowledge Lab — Engine</a>으로 이어졌습니다
 </p>
 
 ---
+
+## 배경
+
+팀의 기획 문서를 여러 문서 도구에서 걷어내고 **GitHub의 Markdown 저장소 하나**로 옮기는 작업을 직접 시작했습니다.
+제품(앱)마다 폴더 하나를 두고 **정책(무엇을) → 규칙(rule: 번호가 붙은 조항과 근거 결정) → 설명(화면 · 상세)** 3층으로 구조화했습니다. 승인은 PR 머지로, 결정은 회의록 대신 번호가 붙은 결정 로그로 남겼고, Notion · Figma · PPT는 이 저장소에서 내보내는 파생물로 바꿨습니다.
+
+사람이 읽기 좋은 구조까지는 만들었지만 여전히 **사람이 쓰고 사람이 읽는 문서**였습니다. 같은 규칙이 여러 문서에 다르게 적히거나 옛 결정이 현재처럼 읽히는 문제는 사람이 찾아야 했습니다.
+그래서 이 문서들을 **기계가 읽고 계산할 수 있는 구조**로 한 단계 더 끌어올리는 방법을 연구하려고 [PPIR](https://github.com/hadan-HwH/product-planning-ir) → [LKL](https://github.com/hadan-HwH/living-knowledge-lab-engine)을 만들었습니다.
+이 저장소(PPIR)는 그 **첫 번째 시도**로, 지식을 타입 있는 atom 그래프로 바꿔 보았습니다.
 
 ## 목차
 
@@ -34,7 +43,8 @@
 
 | 항목 | 내용 |
 |---|---|
-| 개발 기간 | 2026.07.03 ~ 2026.07.08 (설계 스펙 v1.8 → v2.1 → 결정 그래프 재설계 → 구현) |
+| 개발 기간 | 2026.07 ~ 현재, 3단계 연속 작업 ([연구 흐름](#연구-흐름-문서--구조--기계-추출-202607-)) · 이 저장소: 2026.07.03 ~ 07.08 (설계 스펙 v1.8 → v2.1 → 결정 그래프 재설계 → 구현) |
+| 상태 | 연구 프로토타입 · 2026.07 중단 ([왜 멈췄나](#왜-멈췄나-한계)) |
 | 형태 | 개인 프로젝트 (문제 정의 · 설계 · 구현 1인) |
 | 담당 | 데이터 모델(kind 28종) · 검증기 12종 · 결정 reducer · 컴파일러 · Claude 스킬 11종 · 평가 하네스 |
 | 배포 | 없음 (로컬 CLI · Claude Code 스킬) |
@@ -60,6 +70,19 @@ PPIR은 지식을 <b>원자(atom)</b>로 쪼개고 <b>타입(kind)</b>과 **전�
 | 결정 그래프 (PPIR) | `a2` (07-12 회의에서 a를 a2로 대체) | **1.00** | **0.00** |
 
 합성 픽스처 한 건으로 핵심 명제를 확인한 것이고, 일반 벤치마크는 아닙니다. → [`compiled/reports/decision-eval-report.md`](compiled/reports/decision-eval-report.md)
+
+### 연구 흐름: 문서 → 구조 → 기계 추출 (2026.07 ~)
+
+세 저장소는 같은 기간에 이어진 하나의 작업입니다. 기획 지식의 원본을 어디에 둘지를 세 번 바꿔 가며 실험했습니다.
+
+| 단계 | 기간 | 지식의 원본 | 사람이 하는 일 | 상태 |
+|---|---|---|---|---|
+| ① 팀 기획 문서 저장소 (비공개) | 2026.07.03 ~ 운영 중 | 정책 → 규칙 → 설명 3층 md (PR 승인 · 결정 로그) | 문서를 직접 쓰고 리뷰 | 운영 중 · 기여자 12명 중 커밋 476건 |
+| ② **PPIR** (이 저장소) | 2026.07.03 ~ 07.08 | 타입 있는 atom 그래프 | atom을 Proposal로 제출 · 승인 | 중단 → ③ |
+| ③ [LKL](https://github.com/hadan-HwH/living-knowledge-lab-engine) | 2026.07.29 ~ 08.08 | 원문에서 추출한 정본 | 기계가 낸 판정 큐만 검토 | 중단 · 다음 단계 정리 |
+
+①은 실제로 쓰이는 문서 시스템이고, ②·③은 그 문서를 "기계가 계산할 수 있는 지식"으로 바꾸려는 실험입니다.
+②는 사람이 구조를 직접 쓰는 방식이 너무 무겁다고 진단하고 멈췄습니다. ③은 ①의 문서를 그대로 원천으로 두고 기계가 정본을 뽑는 쪽으로 방향을 바꿨습니다.
 
 ---
 
@@ -298,22 +321,29 @@ product-planning-ir/
 | [07-improvements](docs/07-improvements.md) | 개선 백로그 (P0 / P1 / P2) |
 | [08-verification-and-testing](docs/08-verification-and-testing.md) | 검증 · 테스트 피라미드 (Level 0~7) · merge 게이트 |
 
-### 후속작으로 이어진 것
+### 왜 멈췄나 (한계)
 
-이 시스템을 쓰면서 드러난 문제를 가설로 세워 진단했고, 그 결과를 [Living Knowledge Lab — Engine](https://github.com/hadan-HwH/living-knowledge-lab-engine)으로 다시 설계했습니다.
+PPIR을 계속 쓰지 않게 된 이유를 가설 6개로 세워 따져봤습니다. 가장 그럴듯한 설명은 아래 세 가지의 결합이었고, 하나를 단일 원인으로 확정하지는 않았습니다.
 
-| 여기서의 문제 | 후속작의 답 |
+| 한계 | 근거 (이 저장소에서 확인할 수 있는 것) |
 |---|---|
-| 가벼운 조사부터 확정 결정까지 전부 typed atom으로 직접 써야 함 (표현 밀도 과잉) | 사람이 구조를 쓰지 않고, 원문 조각을 그대로 모아 개념을 조립 |
-| 문서 → 구조 이동이 수작업 (adopt 자동화 미완성) | 원문 → 정본 파이프라인. LLM은 추출 한 단계만, 나머지는 결정론 |
-| 그래프로만 할 수 있는 반복 사용이 없음 (소비 workflow 부재) | how · impact · recent 질의와 정본 뷰어를 소비 경로로 둠 |
+| **표현 밀도 과잉** | 가벼운 조사부터 확정 결정까지 kind 28종의 같은 작성 · 검증 체계를 거칩니다 |
+| **intake 자동화 미완성** | 문서를 Proposal로 바꾸는 범용 adopt 스크립트가 없고, 스킬이 참조하는 runtime 스크립트 6개(`adopt.py` · `reflect.py` · `publish.py` · `context.py` · `explain.py` · `observe_impl.py`)가 pending입니다 |
+| **소비 workflow 부재** | role별(FE / BE / QA / PM) 뷰 중 화면정의서 1종만 구현됐고, 효과 검증은 합성 픽스처 1건뿐입니다 |
 
-이 저장소의 결정 reducer는 후속작에서 기준선(O0)으로 이어 쓰고, 그 위에 다음 단계를 쌓았습니다.
+그 밖에 Proposal → staging → 검증기 12종 → merge로 이어지는 운영 절차가 작은 팀에는 무겁다는 점도 가설로 남겼습니다.
 
-### 한계
+### 다음으로 이어진 것
 
-- **adopt 자동화는 아직 없습니다.** 새 문서를 Proposal로 만드는 일은 Claude 스킬이 하고, 범용 adopter 스크립트는 없습니다.
-- 스킬 문서가 참조하는 runtime 스크립트 일부(`adopt.py` · `reflect.py` · `publish.py` · `context.py` · `explain.py` · `observe_impl.py`)는 아직 없습니다. 스킬에 "pending"으로 표시돼 있습니다.
-- role별(FE / BE / QA / PM) publish 뷰는 화면정의서 1종만 구현돼 있습니다.
+진단 결과를 [Living Knowledge Lab — Engine](https://github.com/hadan-HwH/living-knowledge-lab-engine)으로 다시 설계했습니다.
+
+| 여기서의 한계 | LKL의 답 |
+|---|---|
+| 표현 밀도 과잉 | 사람이 구조를 쓰지 않고, 원문 조각을 그대로 모아 개념을 조립 |
+| intake 자동화 미완성 | 원문 → 정본 파이프라인. LLM은 추출 한 단계만, 나머지는 결정론 |
+| 소비 workflow 부재 | how · impact · recent 질의와 정본 뷰어를 소비 경로로 둠 |
+
+- 이 저장소의 결정 reducer는 LKL에서 기준선(O0)으로 이어 썼습니다.
+- 여기서는 규칙이었던 "모르는 건 지어내지 않는다"를 LKL은 왕복 인용 게이트로 기계화했습니다.
 
 현황 전체는 [docs/06-status.md](docs/06-status.md)에 있습니다.
